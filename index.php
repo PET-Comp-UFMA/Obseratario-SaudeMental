@@ -28,8 +28,8 @@
     <section id="slider">
       <ul class="slider-content">
         <li class="slider-item fade">
-          <div class="texto-banner" style="background: url(./assets/images/photo-6.jpg); 
-          background-size: cover;">
+          <div class="texto-banner" style="background: url(./assets/images/photo-10.jpg); 
+          background-size: cover">
             <div class="intro-noticia">
               <h3>Observatório Saúde Mental e Políticas sobre Drogas</h3>
               <p>Captação de obras na área de saúde mental e políticas sobre drogas no município de Sobral-CE</p>

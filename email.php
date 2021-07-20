@@ -17,7 +17,7 @@ if (!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem
 	try {
     //Server settings
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = ***';                     //Set the SMTP server to send through
+    $mail->Host       = '**';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'contatoteste@observatoriodesaudemental.com.br';                     //SMTP username
     $mail->Password   = '**';                               //SMTP password

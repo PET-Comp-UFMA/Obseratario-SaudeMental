@@ -89,14 +89,14 @@
       <div class="card">
         <div class="details">
           <div class="data-name">
-            <p class="data"><?php print_r(utf8_encode($row['Data'])) ?></p>
+            <p class="data">Data de publicação: <?php print_r(utf8_encode($row['Data']))?></p>
             <h5 class="article-name">
             <?php print_r(utf8_encode($row['Titulo']))?>
             </h5>
           </div>
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
-            <div class="links">
+            <div class="links ">
               <a href=""><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
@@ -111,6 +111,11 @@
             </ul>
           </div>
         </div>
+        <div class="pub-type">
+          <span class="span-pub-type">Tipo:</span>
+          <span class="pub-type-cont">Artigo</span> <!-- Se o tipo da publicação for dinamico, é so colocar aqui -->
+        </div>
+
         <div class="panel fade">
           <div class="resume">
             <p class="resume-title">Resumo</p>
