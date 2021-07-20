@@ -13,11 +13,10 @@ main .mensagem input {
   border-radius: 10px;
   font-style: italic;
   margin-top: 20px;
-  outline: none;
   padding: 10px;
 }
 
-main .mensagem .nome {
+main .mensagem .nome, main .mensagem .assunto{
   width: 100%;
 }
 
@@ -31,12 +30,19 @@ main .mensagem .nome {
   width: 48%;
 }
 
-.mensagem .input-mensagem {
-  border: none;
+.mensagem  textarea.textarea {
   border: 1px solid #3E4095;
   height: 500px;
   padding: 20px;
   width: 100%;
+  margin-top: 20px;
+  resize: none;
+  border-radius: 10px;
+}
+ 
+.mensagem  textarea.textarea:focus, .mensagem input:focus{
+  outline: none;
+  border: 3px solid #3E4095;;
 }
 
 main button {
@@ -59,7 +65,7 @@ main button:hover {
 }
 
 @media (max-width: 800px) {
-  main .mensagem input {
+  main .mensagem input, main .mensagem textarea {
     font-size: 12px;
   }
 }

@@ -114,6 +114,24 @@ main .container .card .details .resume {
   flex-direction: column;
 }
 
+main .container .card .details .share .links{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+main .container .card .pub-type{
+  font-size: 14px;
+}
+
+main .container .card .pub-type .pub-type-cont {
+  color: #3E4095;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
 main .container .card .panel .tags .list-tags{
   display: flex;
   flex-direction: row;

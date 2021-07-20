@@ -10,6 +10,16 @@ p {
   margin: 0 0 20px 0;
 }
 
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3d3d798e;
+}
+
 /* HEADER */
 
 header {
@@ -71,6 +81,7 @@ header nav button {
   display: flex;
   font-size: 18px;
   padding: 8px;
+  margin: 9px;
 }
 
 
@@ -141,7 +152,7 @@ mark:hover:after {
 
 footer {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   margin-top: 0;
   padding: 3.125rem 1.25rem;
   background: #545457;
@@ -179,6 +190,18 @@ footer .infos {
   justify-content: space-around;
   flex-direction: column;
   height: 100%;
+}
+
+footer .infos ul{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .infos ul .numeros-contatos{
+  letter-spacing: 2px;
 }
 
 footer h4{
@@ -231,6 +254,9 @@ footer .contatos {
 
 footer .contatos .contato{
   align-self: flex-start;
+  width: 180px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 footer .contatos ul {
@@ -244,24 +270,13 @@ footer .contatos li {
   width: 300px;
 }
 
-footer .contatos li a {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-left: -10px;
-  padding: 12px;
-  text-decoration: none;
-  width: 140px;
-}
-
 footer .contatos img {
   margin: 0;
   width: 25px;
 }
 
-footer .contatos a, footer .contatos p {
+footer .contatos a{
   color: #fff;
-  margin-left: 20px;
 }
 
 footer .contatos .btn-contato {
@@ -470,12 +485,14 @@ footer .contato a {
 
 @media (min-width: 1051px ){
   
-.container-fale-conosco {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: flex-start;
-}
+  .container-fale-conosco {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  
 }
 
 @media (max-width: 1050px){
@@ -521,4 +538,32 @@ footer .contato a {
   footer {
     padding: 2rem;
   }
+}
+
+@media (max-width:470px){
+  footer {
+    padding: 0.50rem;
+  }
+  
+  footer .infos li img{
+    width: 20px;
+  }
+
+  footer .infos li p {
+    font-size: 12px;
+  }
+  
+  footer .contatos .contato{
+    width: 140px;
+  }
+
+  footer .contatos img {
+    width: 20px;
+  }
+
+  footer .contatos .contato{
+    font-size: 13px;
+  }
+
+  
 }
