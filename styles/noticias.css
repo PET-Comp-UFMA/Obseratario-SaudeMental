@@ -56,3 +56,17 @@
   margin: 30px 0;
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .container .card {
+    flex-direction: column;
+  }
+
+  .container .card img {
+    width: 100%;
+  }
+
+  .container .card .details {
+    padding-left: 0;
+  }
+}

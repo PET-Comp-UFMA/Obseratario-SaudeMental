@@ -133,7 +133,7 @@
           </div>	
         </div>
       
-        <div class="buttons-container" style="display: flex; justify-content: flex-start;">
+        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
                   
           <button class="button-show-more">
             Ver mais
@@ -148,7 +148,7 @@
             </span>
           </a>
 
-        </div>
+        <!-- </div> -->
         
         <div class="line-gray"></div>
         <!-- fim -->
@@ -185,5 +185,6 @@
   <script src="./scripts/script.js"></script>
   <script src="./scripts/pagination.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
+  <script src="./scripts/tag_display.js"></script>
 </body>
 </html>

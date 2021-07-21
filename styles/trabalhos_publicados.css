@@ -278,6 +278,10 @@ main .container .pagination .numbers .active:hover {
   width: 100%
 }
 
+.tag-zero {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
 
   main .container {
@@ -380,6 +384,7 @@ main .container .pagination .numbers .active:hover {
   main .container .card .details .tags {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   main .container .card .details .data-name p,
@@ -392,6 +397,15 @@ main .container .pagination .numbers .active:hover {
     letter-spacing: 4px;
     margin: 6px 0;
     text-transform: uppercase;
+  }
+
+  main .container .card .details .share {
+    margin: 10px 0;
+  }
+
+  main .container .card .details .share .links {
+    justify-content: space-between;
+    margin: 10px 0;
   }
 
   main .container .card .details .share a img {
