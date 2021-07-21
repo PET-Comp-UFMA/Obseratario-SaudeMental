@@ -279,6 +279,10 @@ main .container .pagination .numbers .active:hover {
   width: 100%
 }
 
+.tag-zero {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
 
   main .container {
@@ -381,6 +385,7 @@ main .container .pagination .numbers .active:hover {
   main .container .card .details .tags {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   main .container .card .details .data-name p,
@@ -395,8 +400,13 @@ main .container .pagination .numbers .active:hover {
     text-transform: uppercase;
   }
 
+  main .container .card .details .data-name {
+    margin-bottom: 10px;
+  }
+
   main .container .card .details .share a img {
     height: 20px;
+    margin: 10px 0;
     width: 20px;
   }
 
@@ -405,10 +415,10 @@ main .container .pagination .numbers .active:hover {
   main .container .card .panel .tags .list-tags .item-tag {
     font-size: 14px;
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
 
-  main .container .card .button-show-more {
+  main .container .card button {
     background: none;
     border: 1px solid #3E4095;
     border-radius: 25px;
@@ -418,9 +428,9 @@ main .container .pagination .numbers .active:hover {
     margin: 10px auto;
     margin-left: 0;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     transition: .1s ease-out;
-    width: 60%;
+    width: fit-content;
   }
 
   main .container .pagination {

@@ -69,7 +69,7 @@
     </form>
       <!-- START  -->
       
-    <section id="paginate">
+    <section id="paginate" class="fade">
     <div class="line-purple"></div>
     <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
        <?php
