@@ -1,4 +1,4 @@
-  <?php
+<?php
     require_once('conexao.php');
 ?>
 
@@ -69,7 +69,7 @@
     </form>
       <!-- START  -->
       
-    <section id="paginate" class="fade">
+    <section id="paginate">
     <div class="line-purple"></div>
     <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
        <?php
@@ -93,6 +93,10 @@
             <h5 class="article-name">
             <?php print_r(utf8_encode($row['Titulo']))?>
             </h5>
+            <div class="pub-type">
+              <span class="span-pub-type">Tipo:</span>
+            <span class="pub-type-cont"> <?php print_r(utf8_encode($row['Tipo']))?></span>
+            </div>
           </div>
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
@@ -111,10 +115,8 @@
             </ul>
           </div>
         </div>
-        <div class="pub-type">
-          <span class="span-pub-type">Tipo:</span>
-          <span class="pub-type-cont">Artigo</span> <!-- Se o tipo da publicação for dinamico, é so colocar aqui -->
-        </div>
+        
+        <!-- tava aqui -->
 
         <div class="panel fade">
           <div class="resume">
@@ -130,18 +132,24 @@
             </ul>
           </div>	
         </div>
-        <button class="button-show-more">
-          Ver mais
-          <span class="material-icons">
-            add
-          </span>
-        </button>
-        <a href="" download="" class="button-download">
-          Download
-          <span class="material-icons">
-            file_download
-          </span>
-        </a>
+      
+        <div class="buttons-container" style="display: flex; justify-content: flex-start;">
+                  
+          <button class="button-show-more">
+            Ver mais
+            <span class="material-icons">
+              add
+            </span>
+          </button>
+          <a href="" download="" class="button-download">
+            Download
+            <span class="material-icons">
+              file_download
+            </span>
+          </a>
+
+        </div>
+        
         <div class="line-gray"></div>
         <!-- fim -->
       <?php
@@ -177,6 +185,5 @@
   <script src="./scripts/script.js"></script>
   <script src="./scripts/pagination.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
-  <script src="./scripts/tag_display.js"></script>
 </body>
 </html>
