@@ -132,18 +132,24 @@
             </ul>
           </div>	
         </div>
-        <button class="button-show-more">
-          Ver mais
-          <span class="material-icons">
-            add
-          </span>
-        </button>
-        <a href="" download="" class="button-download">
-          Download
-          <span class="material-icons">
-            file_download
-          </span>
-        </a>
+      
+        <div class="buttons-container" style="display: flex; justify-content: flex-start;">
+                  
+          <button class="button-show-more">
+            Ver mais
+            <span class="material-icons">
+              add
+            </span>
+          </button>
+          <a href="" download="" class="button-download">
+            Download
+            <span class="material-icons">
+              file_download
+            </span>
+          </a>
+
+        </div>
+        
         <div class="line-gray"></div>
         <!-- fim -->
       <?php

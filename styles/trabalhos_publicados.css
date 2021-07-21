@@ -407,6 +407,7 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
+
   main .container .card button{
     background: none;
     border: 1px solid #3E4095;
@@ -414,8 +415,7 @@ main .container .pagination .numbers .active:hover {
     color: #3E4095;
     font-size: 16px;
     font-weight: 500;
-    margin: 10px auto;
-    margin-left: 0;
+    margin: 10px 15px 10px 0;
     text-decoration: none;
     padding: 5px;
     transition: .1s ease-out;
