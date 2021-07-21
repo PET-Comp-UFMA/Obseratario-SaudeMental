@@ -218,6 +218,7 @@ main .container .pagination {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 main .container .pagination .numbers {

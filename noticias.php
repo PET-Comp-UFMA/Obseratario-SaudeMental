@@ -20,7 +20,6 @@
 
 
     <!-- INICIO --> 
-    <div class="line-gray"></div>
     <div class="card">
       <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="">
       <div class="details">
@@ -29,11 +28,11 @@
         <a href="?Noticia=<?php print_r(utf8_encode($row['idNoticia']))?>">Ver mais</a>
       </div>
     </div>
+    <div class="line-gray"></div>
     <?php 
       }
     }	
     ?>
-    <div class="line-gray"></div>
 </section>
 
     <!-- FIM -->
