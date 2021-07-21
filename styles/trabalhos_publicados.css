@@ -186,7 +186,8 @@ main .container .card .panel .tags .list-tags .item-tag {
   width: fit-content;
 }
 
-main .container .card button {
+main .container .card .button-show-more,
+main .container .card .button-download {
   align-items: center;
   background: none;
   border: 1px solid #3E4095;
@@ -198,20 +199,29 @@ main .container .card button {
   font-weight: 500;
   margin: 10px auto;
   margin-left: 0;
+  outline: none;
   text-decoration: none;
   padding: 12px;
   transition: .1s ease-out;
   width: fit-content;
 }
 
-main .container .card button:hover {
+main .container .card .button-show-more:hover,
+main .container .card .button-download:hover {
   background: #3E4095;
   color: #fff;
 }
 
-main .container .card button span {
+main .container .card .button-show-more span,
+main .container .card .button-download span {
   font-size: 18px;
   font-weight: 400;
+}
+
+main .container .card .button-download {
+  bottom: 0;
+  float: right;
+  right: 100px;
 }
 
 main .container .pagination {
@@ -398,7 +408,7 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
-  main .container .card button {
+  main .container .card .button-show-more {
     background: none;
     border: 1px solid #3E4095;
     border-radius: 25px;

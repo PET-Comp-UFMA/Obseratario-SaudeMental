@@ -136,6 +136,12 @@
             add
           </span>
         </button>
+        <a href="" download="" class="button-download">
+          Download
+          <span class="material-icons">
+            file_download
+          </span>
+        </a>
         <div class="line-gray"></div>
         <!-- fim -->
       <?php
