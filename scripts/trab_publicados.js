@@ -28,6 +28,4 @@ for (var i=0; i<button.length; i++) {
   })
 }
 
-var tag_items = html2.getAll('.item-tag')
 
-console.log(tag_items)
