@@ -12,7 +12,6 @@ var tags = html2.getAll('.tags-download')
 
 for (var i=0; i<button.length; i++) {
   button[i].addEventListener('click', function() {
-    var text = this.innerHTML;
     var panel = this.previousElementSibling
     if (panel.style.display === 'none' || panel.style.display === "") {
       panel.style.display = 'block'
@@ -28,3 +27,7 @@ for (var i=0; i<button.length; i++) {
     }
   })
 }
+
+var tag_items = html2.getAll('.item-tag')
+
+console.log(tag_items)

@@ -187,7 +187,8 @@ main .container .card .panel .tags .list-tags .item-tag {
   width: fit-content;
 }
 
-main .container .card button {
+main .container .card .button-show-more,
+main .container .card .button-download {
   align-items: center;
   background: none;
   border: 1px solid #3E4095;
@@ -197,21 +198,35 @@ main .container .card button {
   display: flex;
   font-size: 16px;
   font-weight: 500;
+<<<<<<< HEAD
   margin: 10px 15px 10px 0;
+=======
+  margin: 10px auto;
+  margin-left: 0;
+  outline: none;
+>>>>>>> 7d37f369861b3c5c6ed39f026c58a58ac5b457f7
   text-decoration: none;
   padding: 12px;
   transition: .1s ease-out;
   width: fit-content;
 }
 
-main .container .card button:hover {
+main .container .card .button-show-more:hover,
+main .container .card .button-download:hover {
   background: #3E4095;
   color: #fff;
 }
 
-main .container .card button span {
+main .container .card .button-show-more span,
+main .container .card .button-download span {
   font-size: 18px;
   font-weight: 400;
+}
+
+main .container .card .button-download {
+  bottom: 0;
+  float: right;
+  right: 100px;
 }
 
 main .container .pagination {
@@ -398,7 +413,11 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
+<<<<<<< HEAD
   main .container .card button{
+=======
+  main .container .card .button-show-more {
+>>>>>>> 7d37f369861b3c5c6ed39f026c58a58ac5b457f7
     background: none;
     border: 1px solid #3E4095;
     border-radius: 25px;

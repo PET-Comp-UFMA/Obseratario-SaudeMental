@@ -132,25 +132,18 @@
             </ul>
           </div>	
         </div>
-        
-        <div class="buttons-trabalhos_publicados" style="display:flex; justify-content: flex-start; align-items: flex-start" >
-          
-
-          <button class="button-show-more" href="">
-            Ver mais
-            <span class="material-icons">
-              add
-            </span>
-          </button>
-          
-          <a class="button-download">
-            Download
-            <span class="material-icons">
-              file_download
-            </span>
-          </a>
-
-        </div>
+        <button class="button-show-more">
+          Ver mais
+          <span class="material-icons">
+            add
+          </span>
+        </button>
+        <a href="" download="" class="button-download">
+          Download
+          <span class="material-icons">
+            file_download
+          </span>
+        </a>
         <div class="line-gray"></div>
         <!-- fim -->
       <?php
