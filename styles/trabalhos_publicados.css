@@ -198,13 +198,7 @@ main .container .card .button-download {
   display: flex;
   font-size: 16px;
   font-weight: 500;
-<<<<<<< HEAD
   margin: 10px 15px 10px 0;
-=======
-  margin: 10px auto;
-  margin-left: 0;
-  outline: none;
->>>>>>> 7d37f369861b3c5c6ed39f026c58a58ac5b457f7
   text-decoration: none;
   padding: 12px;
   transition: .1s ease-out;
@@ -413,11 +407,7 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
-<<<<<<< HEAD
   main .container .card button{
-=======
-  main .container .card .button-show-more {
->>>>>>> 7d37f369861b3c5c6ed39f026c58a58ac5b457f7
     background: none;
     border: 1px solid #3E4095;
     border-radius: 25px;
