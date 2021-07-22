@@ -20,31 +20,31 @@
     include('header.php');
   ?>
 
-  <main class="fade">
-    <section id="envio-mensagem">
-      <div class="section-header">
+  <?php
+    if(!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem']) or !isset($_POST['phone'])){
+      //Se não tiver enviado email exiba a tela de form de contato
+      ?>
+      <main class="fade">
+       <div class="section-header">
         <h2>contato</h2>
       </div>
-      <form action="./email.php" method="post">
-      <div class="mensagem">
-        <div class="nome">
-          <input type="text" name="nome" required="required" id="nome" placeholder="Nome:*" class="nome">
-        </div>
-        <div class="assunto">
-          <input type="text" name="assunto" id="assunto" placeholder="Assunto:" class="assunto">
-        </div>
-        <div class="telefone-email">
-          <input type="email" name="email" required="required" id="nome" placeholder="Email:*" class="email">	
-          <input type="tel"   name="phone" id="phone" placeholder="Telefone: " class="telefone">
-        </div>
-        <div class="texto-mensagem">
-          <textarea name="mensagem" id="" placeholder="Mensagem: " class="textarea"></textarea>
-        </div>
+      <?php
+      include('formContato.php');
+    }else{
+      //Se tiver envia o email;
+      ?>
+      <main class="fade">
+       <div class="section-header">
+        <h2>contato</h2>
       </div>
-    </section>
-    <button type="submit">Enviar </button>
-    </form>
-  </main>
+      <?php
+
+      include('email.php'); 
+      include('formContato.php');
+
+    }
+
+  ?>
   
   <?php
     include('footer.php');

@@ -6,21 +6,18 @@ require './scripts.php/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
-if (!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem'])) {
-	echo "Pacote não Permitido";
-}else{
 	
 
 	function email($para_email, $para_nome,$assunto, $body){
 	$mail = new PHPMailer(true);
 	try {
     //Server settings
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = '**';                     //Set the SMTP server to send through
+    $mail->isSMTP();
+    $mail->CharSet = 'UTF-8';                                         //Send using SMTP
+    $mail->Host       = 'mail.observatoriodesaudemental.com.br';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'contatoteste@observatoriodesaudemental.com.br';                     //SMTP username
-    $mail->Password   = '**';                               //SMTP password
+    $mail->Password   = '$Teste$Contato$22';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -35,9 +32,9 @@ if (!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    echo '<p style="text-align: center;" >Email enviado!</p> ';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Email não pode ser enviado. Mailer Error: {$mail->ErrorInfo}";
 }
 	}//Function
 
@@ -45,12 +42,8 @@ if (!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem
 	$email = $_POST['email'];
 	$mensagem = $_POST['mensagem'];
 	$telefone = $_POST['phone'];
-	$corpo_email = "<h1>Nome: $nome</h1> <p>Email: $email</p> <p>Mensagem: $mensagem</p><p>Telefone: $telefone</p>";
-	$controle = email("petcomputacao.ufma@gmail.com", "Observatorio de Saude Mental", "Contato", $corpo_email);
-	if($controle == 1){
-		echo "Envio ok";
-	}else{
-		echo $controle;
-	}
-	}//Else
+	$assunto = $_POST['assunto'];
+	$corpo_email = "<h3>Nome: $nome </h3> <p>Email: $email </p> <p>Telefone: $telefone </p> <p>Assunto: $assunto </p>  <p>Mensagem:</p> $mensagem";
+	email("matheus.levy@discente.ufma.br", "Observatório de Saúde Mental", $assunto, $corpo_email);
+	//petcomputacao.ufma@gmail.com
 ?>
