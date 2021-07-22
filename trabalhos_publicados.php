@@ -141,7 +141,7 @@
               add
             </span>
           </button>
-          <a href="" download="" class="button-download">
+         <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
             Download
             <span class="material-icons">
               file_download
