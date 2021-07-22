@@ -40,7 +40,7 @@ header .logos {
   width: 250px;
 }
 
-header .logos a .dexters-logo {
+header .logos a .observatorio-logo {
   height: 100%;
   width: 70px;
 }
@@ -351,7 +351,7 @@ footer .contato a {
     display: none;
   }
 
-  header .logos a .dexters-logo {
+  header .logos a .observatorio-logo {
     height: 50px;
     width: 60%;
   }

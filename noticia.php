@@ -47,7 +47,7 @@
       <div class="noticia-especifica">
         <h1 class="titulo-noticia"><?php print_r(utf8_encode($Titulo)) ?></h1>
         <div class="image">
-          <img src="./assets/noticias/<?php print_r($Foto) ?>" alt="">
+          <img src="./assets/noticias/<?php print_r($Foto) ?>" alt="" loading="lazy">
         </div>
         <p class="paragrafo-noticia"><?php print_r(utf8_encode($Texto)) ?> </p>
         <div class="voltar">

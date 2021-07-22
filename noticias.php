@@ -21,7 +21,7 @@
 
     <!-- INICIO --> 
     <div class="card">
-      <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="">
+      <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="" loading="lazy">
       <div class="details">
         <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
         <p>Description: <?php print_r(utf8_encode($row['Descricao'])) ?></p>

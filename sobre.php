@@ -36,7 +36,7 @@
 
       <div class="card-integrantes">
         <div class="card">
-          <img src="./assets/images/integrantes/eliany_nazare_oliveira.png" alt="" width="150px">
+          <img src="./assets/images/integrantes/eliany_nazare_oliveira.png" alt="" loading="lazy" width="150px">
           <div class="details">
             <div class="infos">
               <p class="name">Eliany Nazaré Oliveira</p>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="./assets/images/integrantes/claudine_carneiro_aguiar.png" alt="" width="150px">
+          <img src="./assets/images/integrantes/claudine_carneiro_aguiar.png" alt="" loading="lazy" width="150px">
           <div class="details">
             <div class="infos">
               <p class="name">Claudine Carneiro Aguiar</p>

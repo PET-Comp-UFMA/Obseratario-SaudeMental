@@ -1,6 +1,6 @@
 <header>
     <div class="logos">
-      <a href="./index.php"><img src="./assets/images/LogoObservatorio2.png" alt="Logo Dexters" class="dexters-logo"></a>
+      <a href="./index.php"><img src="./assets/images/LogoObservatorio2.png" alt="Logo Observatório" class="observatorio-logo"></a>
       <div class="divider"></div>
       <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/logo-uva-sem-texto.png" alt="Logo UVA" class="ufma-logo"></a>
     </div>
