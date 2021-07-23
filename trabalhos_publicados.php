@@ -101,9 +101,8 @@
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
             <div class="links ">
-              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virutual+de+Saúde+Mental" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virtual+de+Saúde+Mental" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/whatsapp.svg" alt=""></a>  
               <a href=""><img src="./assets/svg/link_black_24dp.svg" alt=""></a>
             </div>

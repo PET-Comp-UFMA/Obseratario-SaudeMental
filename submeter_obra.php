@@ -39,7 +39,7 @@
             <li>Se Produção Técnica e Documentos Institucionais, informar características específicas da obra.</li>
             <li>Palavras-Chave: 04.</li>
             </ul>
-            <li>Anexe o <a href="./assets/docs/termo_autorizacao.pdf" download="termo_autorizacao">termo de autorização para a publicação/divulgação de documento eletrônico</a> preenchido.</li>
+            <li>Anexe o <a href="./assets/docs/termo_autorizacao.pdf" download="termo_autorizacao">termo de autorização</a> para a publicação/divulgação de documento eletrônico preenchido.</li>
             <li>Anexe o Arquivo - PDF.</li>
             <li>Pronto! Analisaremos sua obra e em breve entraremos em contato.</li>  
         </ul>
