@@ -134,20 +134,21 @@
         </div>
       
         <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-                  
+        
+        <div class="buttons-container">
           <button class="button-show-more">
-            Ver mais
-            <span class="material-icons">
-              add
-            </span>
-          </button>
-         <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+              Ver mais
+              <span class="material-icons">
+                add
+              </span>
+            </button>
+          <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
             Download
             <span class="material-icons">
               file_download
             </span>
           </a>
-
+        </div>
         <!-- </div> -->
         
         <div class="line-gray"></div>
@@ -183,8 +184,9 @@
     include('footer.php');
   ?>
   <script src="./scripts/script.js"></script>
-  <script src="./scripts/pagination.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
+  <script src="./scripts/pagination.js"></script>
   <script src="./scripts/tag_display.js"></script>
+  <script src="./scripts/pagination.js"></script>
 </body>
 </html>

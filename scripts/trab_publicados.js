@@ -12,7 +12,7 @@ var tags = html2.getAll('.tags-download')
 
 for (var i=0; i<button.length; i++) {
   button[i].addEventListener('click', function() {
-    var panel = this.previousElementSibling
+    var panel = this.parentNode.parentNode.querySelector(".panel");
     if (panel.style.display === 'none' || panel.style.display === "") {
       panel.style.display = 'block'
       this.innerHTML = "Ocultar"
