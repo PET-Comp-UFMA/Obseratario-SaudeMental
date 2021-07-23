@@ -101,7 +101,7 @@
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
             <div class="links ">
-              <a href=""><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virutual+de+Saúde+Mental" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/whatsapp.svg" alt=""></a>  
@@ -134,20 +134,21 @@
         </div>
       
         <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-                  
+        
+        <div class="buttons-container">
           <button class="button-show-more">
-            Ver mais
-            <span class="material-icons">
-              add
-            </span>
-          </button>
-         <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+              Ver mais
+              <span class="material-icons">
+                add
+              </span>
+            </button>
+          <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
             Download
             <span class="material-icons">
               file_download
             </span>
           </a>
-
+        </div>
         <!-- </div> -->
         
         <div class="line-gray"></div>
@@ -184,6 +185,7 @@
   ?>
   <script src="./scripts/script.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
+  <script src="./scripts/pagination.js"></script>
   <script src="./scripts/tag_display.js"></script>
   <script src="./scripts/pagination.js"></script>
 </body>

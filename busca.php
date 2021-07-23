@@ -1,6 +1,16 @@
 <?php
     require_once('conexao.php');
 
+    $caracteres_sem_acento = array(
+    'Š'=>'S', 'š'=>'s', 'Ð'=>'Dj',''=>'Z', ''=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A',
+    'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E', 'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I',
+    'Ï'=>'I', 'Ñ'=>'N', 'Ń'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U', 'Ú'=>'U',
+    'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss','à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a',
+    'å'=>'a', 'æ'=>'a', 'ç'=>'c', 'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i',
+    'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ń'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o', 'ù'=>'u',
+    'ú'=>'u', 'û'=>'u', 'ü'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y', 'ƒ'=>'f',
+    'ă'=>'a', 'î'=>'i', 'â'=>'a', 'ș'=>'s', 'ț'=>'t', 'Ă'=>'A', 'Î'=>'I', 'Â'=>'A', 'Ș'=>'S', 'Ț'=>'T',
+	);
     if(isset($_GET['publication'])){
       $pesquisa = $_GET['publication'];
     }else{
@@ -100,9 +110,9 @@
        <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
-            $query = "SELECT * FROM trabalhos_publicados WHERE Tipo LIKE '".$tipo."%' and (Titulo LIKE '%".$pesquisa."%' 
-                      or Resumo LIKE '%".$pesquisa."%') and Autor LIKE '%".$autor."%' and  Palavras_Chave LIKE 
-                      '%".$palavra_chave."%' ORDER BY Data DESC;";
+            $query = "SELECT * FROM trabalhos_publicados WHERE Tipo LIKE '".strtr($tipo, $caracteres_sem_acento) ."%' and (Titulo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%' 
+                      or Resumo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%') and Autor LIKE '%". strtr($autor, $caracteres_sem_acento) ."%' and  Palavras_Chave LIKE 
+                      '%". strtr($palavra_chave, $caracteres_sem_acento)  ."%' ORDER BY Data DESC;";
 
             $result = mysqli_query($mysqli, $query);
             $num_results = mysqli_num_rows($result);
@@ -125,7 +135,7 @@
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
             <div class="links">
-              <a href=""><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virutual+de+Saúde+Mental"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
               <a href=""><img src="./assets/svg/whatsapp.svg" alt=""></a>  
@@ -155,12 +165,20 @@
             </ul>
           </div>	
         </div>
-        <button class="button-show-more">
-          Ver mais
-          <span class="material-icons">
-            add
-          </span>
-        </button>
+         <div class="buttons-container">
+          <button class="button-show-more">
+              Ver mais
+              <span class="material-icons">
+                add
+              </span>
+            </button>
+          <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+            Download
+            <span class="material-icons">
+              file_download
+            </span>
+          </a>
+        </div>
         <div class="line-gray"></div>
         <!-- fim -->
       <?php
