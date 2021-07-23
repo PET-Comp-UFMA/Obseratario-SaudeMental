@@ -183,8 +183,8 @@
     include('footer.php');
   ?>
   <script src="./scripts/script.js"></script>
-  <script src="./scripts/pagination.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
   <script src="./scripts/tag_display.js"></script>
+  <script src="./scripts/pagination.js"></script>
 </body>
 </html>

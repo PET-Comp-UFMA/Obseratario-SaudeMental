@@ -1,7 +1,7 @@
 <?php
 $hostname="localhost";
 $bd="observatorio_db";
-$usuario="root2";
+$usuario="root";
 $senha="";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
