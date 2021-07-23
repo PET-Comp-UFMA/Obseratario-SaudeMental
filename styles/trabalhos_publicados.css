@@ -187,6 +187,11 @@ main .container .card .panel .tags .list-tags .item-tag {
   width: fit-content;
 }
 
+main .container .card .buttons-container {
+  display: flex;
+  align-items: center;
+}
+
 main .container .card .button-show-more,
 main .container .card .button-download {
   align-items: center;
