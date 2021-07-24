@@ -12,7 +12,9 @@ var tags = html2.getAll('.tags-download')
 
 for (var i=0; i<button.length; i++) {
   button[i].addEventListener('click', function() {
-    var panel = this.parentNode.parentNode.querySelector(".panel");
+
+    // primeiro parentNode é a div buttons-container, o segundo é a div card-bottom e o terceiro é o card
+    var panel = this.parentNode.parentNode.parentNode.querySelector(".panel");
     if (panel.style.display === 'none' || panel.style.display === "") {
       panel.style.display = 'block'
       this.innerHTML = "Ocultar"
