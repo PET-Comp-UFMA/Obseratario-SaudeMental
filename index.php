@@ -111,6 +111,7 @@
     include('footer.php');
   ?>
 
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/dropdown.js"></script>
+  <script src="./scripts/slider.js"></script>
 </body>
 </html>
