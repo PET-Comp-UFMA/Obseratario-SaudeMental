@@ -147,11 +147,10 @@ main .container .card .panel .resume {
   text-align: justify;
 }
 
-main .container .card .details .data-name .data,
 main .container .card .details .share p,
 main .container .card .details .authors p,
 main .container .card .panel .resume .resume-title,
-main .container .card .panel .tags-title {
+main .container .card .panel .tags-title{
   font-size: calc((12px + .25vw) * .875);
   font-weight: 700;
   letter-spacing: 4px;
@@ -226,6 +225,20 @@ main .container .card .button-download {
   bottom: 0;
   float: right;
   right: 100px;
+}
+
+main .container .card .card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .container .card .card-bottom .data{
+  margin: 0;
+  font-size: 14px;
+}
+main .container .card .card-bottom .data .data-day{
+  font-weight: 500;
 }
 
 main .container .pagination {

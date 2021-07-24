@@ -89,7 +89,7 @@
       <div class="card">
         <div class="details">
           <div class="data-name">
-            <p class="data">Data de publicação: <?php print_r(utf8_encode($row['Data']))?></p>
+                <!--  -->
             <h5 class="article-name">
             <?php print_r(utf8_encode($row['Titulo']))?>
             </h5>
@@ -114,8 +114,6 @@
             </ul>
           </div>
         </div>
-        
-        <!-- tava aqui -->
 
         <div class="panel fade">
           <div class="resume">
@@ -134,20 +132,27 @@
       
         <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
         
-        <div class="buttons-container">
-          <button class="button-show-more">
-              Ver mais
+        <div class="card-bottom">
+
+          <div class="buttons-container">
+            <button class="button-show-more">
+                Ver mais
+                <span class="material-icons">
+                  add
+                </span>
+              </button>
+            <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+              Download
               <span class="material-icons">
-                add
+                file_download
               </span>
-            </button>
-          <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
-            Download
-            <span class="material-icons">
-              file_download
-            </span>
-          </a>
+            </a>
+            
         </div>
+          
+          <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
+        </div>
+        
         <!-- </div> -->
         
         <div class="line-gray"></div>
