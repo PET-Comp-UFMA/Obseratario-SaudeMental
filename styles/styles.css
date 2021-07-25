@@ -152,7 +152,7 @@ mark:hover:after {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.5fr 0.8fr;
   margin-top: 0;
   padding: 3.125rem 1.25rem;
   background: #3b3b3d;
@@ -218,13 +218,12 @@ footer .infos ul {
 
 footer .infos li {
   display: flex;
-  padding: 12px;
+  padding: 12px 0px;
 }
 
 footer .infos li p {
   margin: 0;
   margin-left: 10px;
-  width: 400px;
 }
 
 footer .infos img {
@@ -471,7 +470,6 @@ footer .contato a {
     align-items: center;
     display: flex;
     margin: 0;
-    padding: 12px;
     width: fit-content;
   }
 
@@ -496,7 +494,9 @@ footer .contato a {
     justify-content: flex-start;
   }
 
-  
+  footer .infos {
+    padding:0 3rem;
+  }
 }
 
 @media (max-width: 1050px){

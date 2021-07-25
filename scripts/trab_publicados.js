@@ -12,7 +12,9 @@ var tags = html2.getAll('.tags-download')
 
 for (var i=0; i<button.length; i++) {
   button[i].addEventListener('click', function() {
-    var panel = this.parentNode.parentNode.querySelector(".panel");
+
+    // primeiro parentNode é a div buttons-container, o segundo é a div card-bottom e o terceiro é o card
+    var panel = this.parentNode.parentNode.parentNode.querySelector(".panel");
     if (panel.style.display === 'none' || panel.style.display === "") {
       panel.style.display = 'block'
       this.innerHTML = "Ocultar"
@@ -27,11 +29,3 @@ for (var i=0; i<button.length; i++) {
     }
   })
 }
-
-function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));

@@ -50,7 +50,7 @@
         ?>
         <!-- INICIO -->
         <li class="slider-item fade">
-          <div class="texto-banner" style="background-image: url(./assets/noticias/<?php print_r(utf8_encode($row['Foto'])) ?>);background-size: cover;">
+          <div class="texto-banner" style="background-image: url(./assets/noticias/<?php print_r(utf8_encode($row['Foto'])) ?>);background-size: cover">
             <div class="intro-noticia">
               <h3><?php print_r(utf8_encode($row['Titulo'])) ?></h3>
               <p><?php print_r(utf8_encode($row['Descricao'])) ?> </p>
@@ -111,6 +111,7 @@
     include('footer.php');
   ?>
 
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/dropdown.js"></script>
+  <script src="./scripts/slider.js"></script>
 </body>
 </html>
