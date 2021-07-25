@@ -1,5 +1,6 @@
 <?php
     require_once('conexao.php');
+    
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"type="text/javascript"></script>
 </head>
 <body>
   <?php
@@ -101,10 +102,12 @@
           <div class="share">
             <p class="type">Compartilhe <br> a publicação</p>
             <div class="links ">
-              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virutual+de+Saúde+Mental" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/whatsapp.svg" alt=""></a>  
+              <?php 
+                $url =  "http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=".urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])))." &author=". urlencode(utf8_encode($row['Autor'])) ."&text=Publicado+em+Observatório+de+Saúde+Mental";
+              ?>
+              <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
+              <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a>  
               <a href=""><img src="./assets/svg/link_black_24dp.svg" alt=""></a>
             </div>
           </div>
@@ -188,5 +191,6 @@
   <script src="./scripts/pagination.js"></script>
   <script src="./scripts/tag_display.js"></script>
   <script src="./scripts/pagination.js"></script>
+
 </body>
 </html>
