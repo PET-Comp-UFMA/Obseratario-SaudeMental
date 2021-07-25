@@ -151,8 +151,9 @@
             </a>
             
         </div>
-          
-          <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
+          <div class="container-data">
+            <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
+          </div>
         </div>
         
         <!-- </div> -->

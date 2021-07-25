@@ -1,10 +1,10 @@
 <footer>
     <div class="container-logos-footer">  
       <div class="logos-footer">
-        <a href="./index.html" class="logo-observatorio"><img src="./assets/images/LogoObservatorioBranca.png" alt="Logo Observatório" loading="lazy"></a>
+        <a href="./index.php" class="logo-observatorio"><img src="./assets/images/LogoObservatorioBranca.png" alt="Logo Observatório" loading="lazy"></a>
         <div class="logos-secundarias">
           <a href="http://saude.sobral.ce.gov.br/politicas-sobre-drogas"><img src="./assets/images/logo-coord-psds.png" alt="Logo Sobral - Politícas sobre Drogas" loading="lazy"></a>
-          <a href=""><img src="./assets/images/logo-gesam-sem-fundo.png" alt="" loading="lazy"></a>
+          <a href="" style="pointer-events: none;"><img src="./assets/images/logo-gesam-sem-fundo.png" alt="" loading="lazy"></a>
           <a href="http://www.sobral.ce.gov.br"><img src="./assets/images/logo-sobral.png" alt="Logo Prefeitura Sobral" loading="lazy"></a>
           <a href="http://www.uvanet.br"><img src="./assets/images/logo-uva-sem-texto.png" alt="Logo Universidade do Vale do Acaraú" loading="lazy"></a>
         </div>
