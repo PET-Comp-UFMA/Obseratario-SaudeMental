@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="share">
-            <p class="type">Compartilhe <br> a publicação</p>
+            <p class="type">Compartilhe</p>
             <div class="links ">
               <?php 
                 $url =  "http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=".urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])))." &author=". urlencode(utf8_encode($row['Autor'])) ."&text=Publicado+em+Observatório+de+Saúde+Mental";
