@@ -37,6 +37,7 @@ main .container .filtro .type select {
   border-radius: 6px;
   font-size: 16px;
   font-style: italic;
+  font-weight: 400;
   padding: 14px;
   outline: none;
   width: 100%;
@@ -101,6 +102,8 @@ main .container .card .details .data-name {
 }
 
 main .container .card .details .share {
+  align-items: center;
+  display: flex;
   width: 15%;
 }
 

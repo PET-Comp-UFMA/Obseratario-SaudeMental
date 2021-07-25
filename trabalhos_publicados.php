@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="./styles/styles.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <?php
@@ -105,8 +106,7 @@
               ?>
               <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
-              <a href=""><img src="./assets/svg/link_black_24dp.svg" alt=""></a>
+              <a target="_blank" href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
             </div>
           </div>
           <div class="authors">
@@ -131,11 +131,8 @@
             </ul>
           </div>	
         </div>
-      
-        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
-        
+              
         <div class="card-bottom">
-
           <div class="buttons-container">
             <button class="button-show-more">
                 Ver mais
@@ -149,7 +146,6 @@
                 file_download
               </span>
             </a>
-            
         </div>
           <div class="container-data">
             <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>

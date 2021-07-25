@@ -123,6 +123,7 @@
 
 .active, .dot:hover { 
   background: #3D3D79;
+  opacity: .6;
 }
 
 #sobre {
@@ -257,7 +258,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .texto-banner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 440px) {
   .slider-content .preview, .slider-content .next {
     height: 35px;
     width: 35px;
@@ -317,10 +324,12 @@
   }
 
   .resumo-dexters .text-dexters h1 {
+    font-size: 38px;
     margin-top: 30px;
   }
 
   .resumo-dexters .text-dexters p{
+    font-size: 14px;
     padding: 0;
     width: 275px;
   }

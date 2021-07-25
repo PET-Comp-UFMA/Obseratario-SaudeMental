@@ -12,6 +12,7 @@ main .mensagem input {
   border: 1px solid #3E4095;
   border-radius: 10px;
   font-style: italic;
+  font-weight:500;
   margin-top: 20px;
   padding: 10px;
 }

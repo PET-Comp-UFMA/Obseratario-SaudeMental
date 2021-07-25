@@ -55,7 +55,7 @@
   <link rel="stylesheet" href="./styles/styles.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -122,27 +122,29 @@
                     $row = mysqli_fetch_array($result);
         ?>
 
-        <!-- inicio -->
       <li class="item">
       <div class="card">
         <div class="details">
           <div class="data-name">
-            <p class="data"><?php print_r(utf8_encode($row['Data'])) ?></p>
+                <!--  -->
             <h5 class="article-name">
             <?php print_r(utf8_encode($row['Titulo']))?>
             </h5>
+            <div class="pub-type">
+              <span class="span-pub-type">Tipo:</span>
+            <span class="pub-type-cont"> <?php print_r(utf8_encode($row['Tipo']))?></span>
+            </div>
           </div>
           <div class="share">
-            <p class="type">Compartilhe <br> a publicação</p>
-            <div class="links">
-              <a href="https://twitter.com/intent/tweet?url=http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=<?php echo urlencode(utf8_encode($row['Titulo'])) ?>&author=<?php echo urlencode(utf8_encode($row['Autor'])) ?>&keyword=&type=Artigo&search-button=&text=Publicado+no+Observatório+Virutual+de+Saúde+Mental"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/instagram_icon_copy.svg" alt=""></a>
-              <a href=""><img src="./assets/svg/whatsapp.svg" alt=""></a>  
-              <a href=""><img src="./assets/svg/link_black_24dp.svg" alt=""></a>
+            <p class="type">Compartilhe</p>
+            <div class="links ">
+              <?php 
+                $url =  "http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=".urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])))." &author=". urlencode(utf8_encode($row['Autor'])) ."&text=Publicado+em+Observatório+de+Saúde+Mental";
+              ?>
+              <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+              <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
+              <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
             </div>
-            <p class="authors-names"><?php print_r(utf8_encode($row['Tipo']))?></p>
-              
           </div>
           <div class="authors">
             <p class="authors-names">Autores</p>
@@ -151,6 +153,7 @@
             </ul>
           </div>
         </div>
+
         <div class="panel fade">
           <div class="resume">
             <p class="resume-title">Resumo</p>
@@ -165,35 +168,37 @@
             </ul>
           </div>	
         </div>
-         <div class="buttons-container">
-          <button class="button-show-more">
-              Ver mais
+      
+        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
+        
+        <div class="card-bottom">
+
+          <div class="buttons-container">
+            <button class="button-show-more">
+                Ver mais
+                <span class="material-icons">
+                  add
+                </span>
+              </button>
+            <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
+              Download
               <span class="material-icons">
-                add
+                file_download
               </span>
-            </button>
-          <a href="./documents/<?php print_r(utf8_encode($row['Arquivo']))?>" download='<?php print_r(utf8_encode($row['Titulo'])) ?>' class="button-download">
-            Download
-            <span class="material-icons">
-              file_download
-            </span>
-          </a>
+            </a>
+            
         </div>
+          <div class="container-data">
+            <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
+          </div>
+        </div>
+        
+        <!-- </div> -->
+        
         <div class="line-gray"></div>
         <!-- fim -->
       <?php
         }
-      }else{
-        ?>
-        <li class="item">
-        <div class="card">
-          <div class="details">
-            <div class="data-name">
-              <p class="data">Nenhum item foi encontrado!</p>
-            </div>
-          </div>
-        </div>
-        <?php
       }
       ?>
         </ul>
