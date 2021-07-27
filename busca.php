@@ -202,6 +202,10 @@
       }
       ?>
         </ul>
+        <?php if(!$num_results > 0){
+        	echo("<p style='text-align:center'>Sem resultados</p>");
+        }
+        	?> 
       </section>
       <div class="pagination"> <!-- botões -->
         <div class="prev">
