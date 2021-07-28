@@ -3,7 +3,7 @@ main .container {
   flex-direction: column;
   margin: 20px auto;
   padding: 20px;
-  width: 70%;
+  width: 80%;
 }
 
 main .container h4 {
@@ -33,30 +33,28 @@ main .container .reference {
 }
 
 main .container .card-integrantes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
   margin: 0 auto;
-  text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 main .container .card-integrantes .card {
   align-items: center;
-  background: linear-gradient(180deg, #B6B6FF, #6C6C99);
+  border: 1px solid #3D3D79;
   border-radius: 10px;
+  box-shadow: #d8d8d8 0px 2px 20px 0px;
   display: flex;
   flex-direction: column;
-  height: 400px;
-  margin-right: 20px;
-  padding: 10px;
+  padding-top: 10px;
   width: 300px;
 }
 
 main .container .card-integrantes .card img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
 }
 
 main .container .card-integrantes .card .details .infos {
@@ -68,24 +66,31 @@ main .container .card-integrantes .card .details .infos {
 }
 
 main .container .card-integrantes .card .details .infos .name {
-  color: #fff;
-  font-size: 22px;
+  color: #3D3D79;
+  font-size: 24px;
   font-weight: 500;
+  height: 40px;
   text-align: center;
   margin: 4px 0;
+  width: 280px;
 }
 
 main .container .card-integrantes .card .details .infos .occupation {
-  color: #fff;
-  font-size: 16px;
-  margin: 4px 0;
+  align-items: center;
+  color: #8d8d8d;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  height: fit-content;
+  justify-content: center;
+  margin: 20px 0 10px 0;
   text-align: center;
   width: 200px;
 }
 
 main .container .card-integrantes .card .details .infos .local {
-  color: #fff;
-  font-size: 14px;
+  color: #8d8d8d;
+  font-size: 16px;
   text-align: center;
   width: 200px;
 }

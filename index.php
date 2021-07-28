@@ -99,7 +99,7 @@
         </div>
         <div class="text-dexters">
           <h1>Conheça o <mark class="highlight">Observatório</mark></h1>
-          <p>O Observatório de Saúde Mental e Políticas sobre Drogas é uma iniciativa do Grupo de Estudo e Pesquisa Saúde Mental e Cuidado (GESAM), da Universidade Estadual Vale do Acaraú (UVA), em parceria com a Secretaria de Saúde de Sobral-CE, por meio da Coordenadoria de Políticas sobre Drogas. A nossa missão é o acompanhamento estratégico/científico destas temáticas; aperfeiçoamento e difusão de informações nessas áreas assim como fortalecimento do campo da atenção psicossocial. Ressalta-se ainda que sua criação e institucionalização acontece sem fins lucrativos.
+          <p>O Observatório de Saúde Mental e Políticas sobre Drogas é uma iniciativa do Grupo de Estudo e Pesquisa Saúde Mental e Cuidado (GESAM), da Universidade Estadual Vale do Acaraú (UVA), em parceria com a Secretaria de Saúde de Sobral - Ceará, por meio da Célula de Políticas sobre Drogas. Tem por objetivo, captar e compilar pesquisas institucionais, teses, dissertações, monografias, artigos, livros, capítulos de livros e produções técnicas na área de saúde mental e políticas sobre drogas, realizadas no município, com o intuito de impulsionar sua devolução para sociedade em geral. A nossa missão é o acompanhamento estratégico/científico destas temáticas; aperfeiçoamento e difusão de informações nessas áreas assim como fortalecimento do campo da atenção psicossocial. Ressalta-se ainda que sua criação e institucionalização acontece sem fins lucrativos.
           </p>
           <a href="./sobre.php">Veja Mais ></a>
         </div>

@@ -170,7 +170,6 @@ main .container .card .panel .tags-title{
 
 }
 
-
 main .container .card .details .data-name .article-name {
   font-size: 22px;
   font-weight: 500;
@@ -190,10 +189,9 @@ main .container .card .panel .tags .list-tags .item-tag {
 }
 
 main .container .card .panel .tags .list-tags .item-tag {
-  border: 1px solid #3E4095;
-  border-radius: 50px;
-  margin-right: 10px;
   padding: 10px;
+  padding-top: 0;
+  padding-left: 0;
   width: fit-content;
 }
 
