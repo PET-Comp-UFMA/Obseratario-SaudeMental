@@ -1,3 +1,8 @@
+
+body {
+  background-color: var(--bg);
+}
+
 .container {
   font-family: 'Montserrat', Arial;
   margin: 40px auto;
@@ -29,9 +34,9 @@
 }
 
 .container .card .details a {
-  border: 1px solid #3e4095;
+  border: 1px solid var(--purple-1);
   border-radius: 50px;
-  color: #3e4095;
+  color: var(--purple-1);
   font-size: 14px;
   padding: 10px;
   text-decoration: none;
@@ -39,12 +44,12 @@
 }
 
 .container .card .details a:hover {
-  background: #3e4095;
-  color: #fff;
+  background: var(--purple-1);
+  color: var(--text-white);
 }
 
 .line-purple {
-  background: #3E4095;
+  background: var(--purple-1);
   height: 1px;
   margin: 30px 0;
   width: 100%;

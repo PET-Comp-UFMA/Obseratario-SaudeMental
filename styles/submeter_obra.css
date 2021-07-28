@@ -1,3 +1,7 @@
+body {
+  background: var(--bg);
+}
+
 main .container {
   margin: 20px auto;
   padding: 40px;
@@ -13,12 +17,12 @@ main .container .regras li {
 }
 
 main .container .regras li::marker {
-  color: #3D3D79;
+  color: var(--purple-2);
   font-weight: 900;
 }
 
 main .container .regras li a {
-  color: #3D3D79;
+  color: var(--purple-2);
 }
 
 main .container .regras ul {
@@ -32,7 +36,6 @@ main .container .regras ul li::marker {
 
 @media (max-width: 800px) {
   main .container {
-    background: #eee;
     padding: 40px;
     width: 90%;
   }

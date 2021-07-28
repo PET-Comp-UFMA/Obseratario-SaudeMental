@@ -1,4 +1,4 @@
-<header>
+<header class="dark-mode">
     <div class="logos">
       <a href="./index.php"><img src="./assets/images/LogoObservatorio2.png" alt="Logo Observatório" class="observatorio-logo"></a>
       <div class="divider"></div>

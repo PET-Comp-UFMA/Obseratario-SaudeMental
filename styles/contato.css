@@ -2,6 +2,10 @@
   font-size: 18px;
 }
 
+body {
+  background-color: var(--bg);
+}
+
 main .mensagem {
   margin: 0 auto;
   margin-bottom: 20px;
@@ -9,11 +13,12 @@ main .mensagem {
 }
 
 main .mensagem input {
-  border: 1px solid #3E4095;
+  border: 1px solid var(--gray-border);
   border-radius: 10px;
   font-style: italic;
-  font-weight:500;
+  font-weight: 400;
   margin-top: 20px;
+  opacity: .8;
   padding: 10px;
 }
 
@@ -31,26 +36,28 @@ main .mensagem .nome, main .mensagem .assunto{
   width: 48%;
 }
 
-.mensagem  textarea.textarea {
-  border: 1px solid #3E4095;
-  height: 500px;
-  padding: 20px;
-  width: 100%;
-  margin-top: 20px;
-  resize: none;
+.mensagem textarea.textarea {
+  border: 1px solid var(--gray-border);
   border-radius: 10px;
+  font-style: italic;
+  height: 500px;
+  margin-top: 20px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
 }
  
-.mensagem  textarea.textarea:focus, .mensagem input:focus{
+.mensagem textarea.textarea:focus, .mensagem input:focus{
+  border: 1px solid var(--purple-2);
+  opacity: 1;
   outline: none;
-  border: 3px solid #3E4095;;
 }
 
 main button {
-  background: #fff;
-  border: 1px solid #3E4095;
+  background: var(--bg);
+  border: 1px solid var(--purple-2);
   border-radius: 50px;
-  color: #3E4095;
+  color: var(--purple-2);
   cursor: pointer;
   display: block;
   margin: auto;
@@ -61,8 +68,8 @@ main button {
 }
 
 main button:hover {
-  background: #3E4095;
-  color: #fff;
+  background: var(--purple-2);
+  color: var(--text-white);
 }
 
 @media (max-width: 800px) {

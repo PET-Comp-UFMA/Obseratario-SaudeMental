@@ -5,6 +5,20 @@
   padding: 0;
 }
 
+html {
+  --bg: #fafafa;
+  --bg-black: #111;
+  --bg-secondary: #fdfdfd;
+  --bg-black-secondary: #333;
+  --purple-1: #3E4095;
+  --purple-2: #3d3d79;
+  --text-white: #fff;
+  --text-gray: #8d8d8d;
+  --text-gray-secondary: #535353;
+  --gray-border: #c3c3c3;
+  --black-footer: #222;
+}
+
 p {
   padding: 0;
   margin: 0 0 20px 0;
@@ -13,7 +27,7 @@ p {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #F5F5F5;
+  background-color: var(--bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -23,8 +37,7 @@ p {
 /* HEADER */
 
 header {
-  background: #fafafa;
-  box-shadow: 2px -1px 20px 0px #e1e1e1;
+  background: var(--bg);
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -51,7 +64,7 @@ header .logos .ufma-logo {
 }
 
 header .logos .divider {
-  background: #3D3D79;
+  background: var(--purple-2);
   height: 80%;
   margin: 0 10px ;
   width: 2px;
@@ -80,17 +93,18 @@ header nav button {
   cursor: pointer;
   display: flex;
   font-size: 18px;
+  margin-right: 4px;
   padding: 8px;
-  margin: 9px;
 }
 
 
 header nav button:hover {
-  background: #575a5b6b;
+  background: var(--bg-secondary);
+  opacity: .7;
 }
 
 header nav a, header nav .dropbtn {
-  color: #3D3D79;
+  color: var(--purple-2);
   text-decoration: none;
 }
 
@@ -109,7 +123,7 @@ header nav a, header nav .dropbtn {
   display: block;
   width: 60px;
   height: 5px;
-  background: #3D3D79;
+  background: var(--purple-2);
   bottom: 20px;
   left: calc(50% - 30px);
 }
@@ -124,7 +138,7 @@ header nav a, header nav .dropbtn {
 
 mark {
   background: none;
-  color: #545457;
+  color: var(--text-gray-secondary);
   text-decoration: none;
   
   display: inline-block;
@@ -137,7 +151,7 @@ mark:after {
   display: block;
   height: 4px;
   position: absolute;
-  background: #B9B9D888;
+  background: var(--purple-2);
   transition: height 0.3s ease 0s;
   z-index: 0;
   width: 100%;
@@ -155,7 +169,7 @@ footer {
   grid-template-columns: 1fr 1.5fr 0.8fr;
   margin-top: 0;
   padding: 3.125rem 1.25rem;
-  background: #3b3b3d;
+  background: var(--black-footer);
 }
 
 footer .logos-footer{
@@ -208,7 +222,7 @@ footer h4{
   padding: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-white);
 }
 
 footer .infos ul {
@@ -230,7 +244,7 @@ footer .infos img {
 }
 
 footer .infos a, footer .infos p {
-  color: #fff;
+  color: var(--text-white);
   margin-left: 20px;
 }
 
@@ -274,7 +288,7 @@ footer .contatos img {
 }
 
 footer .contatos a{
-  color: #fff;
+  color: var(--text-white);
 }
 
 footer .contatos .btn-contato {
@@ -288,7 +302,7 @@ footer .infos a {
 }
 
 footer .contato {
-  background: #3D3D79;;
+  background: var(--purple-2);
   border-radius: 6px;
   box-shadow: 0px 6px 10px 0px #252629;
   display: flex;
@@ -303,7 +317,7 @@ footer .contato img {
 }
 
 footer .contato a {
-  color: #fff;
+  color: var(--text-white);
   font-size: 14px;
   text-decoration: none;
 }
@@ -370,7 +384,7 @@ footer .contato a {
   }
   
   .overlay {
-    background-color: #3D3D79;
+    background-color: var(--purple-2);
     background-color: #3D3D79f8;
     overflow-y: hidden;
     position: fixed;
@@ -391,7 +405,7 @@ footer .contato a {
   .overlay a, .overlay button, .overlay .dropbtn {
     display: flex;
 
-    color: #fff;
+    color: var(--text-white);
     font-size: 18px;
     text-decoration: none;
 
@@ -428,7 +442,7 @@ footer .contato a {
   }
   
   .dropbtn {
-    color: #fff;
+    color: var(--text-white);
     display: flex;
     margin-left: 12px;
   }

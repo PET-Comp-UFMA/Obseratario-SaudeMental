@@ -1,3 +1,8 @@
+
+body {
+  background-color: var(--bg);
+}
+
 main .container {
   display: flex;
   flex-direction: column;
@@ -27,7 +32,7 @@ main .container .noticia-especifica h1.titulo-noticia {
   text-align: center;
   margin-bottom: 25px;
   padding-bottom: 12px;
-  border-bottom: 4px solid #3E4095;
+  border-bottom: 4px solid var(--purple-2);
 }
 
 main .container .noticia-especifica .image {
@@ -43,22 +48,22 @@ main .container .noticia-especifica .image img{
 
 
 main .container .noticia-especifica p.paragrafo-noticia {
-  font-size: 14px;
-  font-weight: 300;
-  text-align: justify;
-  width: 95%;
-  padding: 2px;
-  margin: auto;
+  color: var(--text-gray);
   font-size: 17.5px;
+  font-weight: 300;
   line-height: 28px;
+  text-align: justify;
+  margin: auto;
+  padding: 2px;
+  width: 95%;
 }
 
 main .container .button-back {
   align-items: center;
   background: none;
-  border: 1px solid #3E4095;
+  border: 1px solid var(--purple-2);
   border-radius: 25px;
-  color: #3E4095;
+  color: var(--purple-2);
   cursor: pointer;
   display: flex;
   float: right;
@@ -72,8 +77,8 @@ main .container .button-back {
 
 main .container .button-back:hover,
 main .container .button-back:focus {
-  background: #3D3D79;
-  color: #fff;
+  background: var(--purple-2);
+  color: var(--text-white);
 }
 
 main .voltar {
