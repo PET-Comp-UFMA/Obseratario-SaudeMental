@@ -528,3 +528,18 @@ main .container .pagination .numbers .active:hover {
     color: var(--purple-2);
   }
 }
+
+@media screen and (max-width: 430px) {
+  main .container .card .details .share .links{
+  width: 90%;
+  text-align: center;
+  margin-left: 2vh;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+  main .container .card .details .share .links a{
+    margin: auto 2vh auto 2vh;
+  }
+
+} 
