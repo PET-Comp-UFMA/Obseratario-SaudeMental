@@ -172,7 +172,7 @@ footer {
   background: var(--black-footer);
 }
 
-footer .logos-footer{
+footer .logos-footer {
   display:flex;
   align-items: center;
   justify-content: center;
@@ -196,6 +196,11 @@ footer .logos-footer a img {
 footer .logos-footer .logos-secundarias {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+footer .logos-secundarias a {
+  background-color: #fff;
 }
 
 footer .infos {
