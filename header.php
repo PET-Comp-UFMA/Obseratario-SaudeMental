@@ -2,7 +2,7 @@
     <div class="logos">
       <a href="./index.php"><img src="./assets/images/LogoObservatorio2.png" alt="Logo Observatório" class="observatorio-logo"></a>
       <div class="divider"></div>
-      <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="./assets/images/logo-uva-sem-texto.png" alt="Logo UVA" class="ufma-logo"></a>
+      <a href="http://www.uvanet.br" target="_blank"><img src="./assets/images/logos/uva-no-background.png" alt="Logo UVA" class="ufma-logo"></a>
     </div>
     <nav id="nav-bar" class="overlay">
       <img src="./assets/svg/close-24px.svg" alt="" class="close-btn" onclick="closeMenu()">

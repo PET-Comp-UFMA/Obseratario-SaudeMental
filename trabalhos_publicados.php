@@ -12,7 +12,7 @@
 
   <link rel="icon" href="./assets/images/LogoObservatorio2.png">
   
-  <link rel="stylesheet" href="./styles/trabalhos_publicados.css" id="theme-link">
+  <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
   <link rel="stylesheet" href="./styles/styles.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,8 +27,6 @@
     <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
       <h2>Trabalhos Publicados</h2>
     </div>
-
-    <button class="btn-toggle">Dark Mode</button>
 
     <section class="container">
     	<h2>Buscar por: </h2>
@@ -190,7 +188,6 @@
   ?>
   
   <script src="./scripts/dropdown.js"></script>
-  <script src="./scripts/btn-dark-mode.js"></script>
   <script src="./scripts/trab_publicados.js"></script>
   <script src="./scripts/pagination.js"></script>
   <script src="./scripts/tag_display.js"></script>

@@ -10,13 +10,12 @@ html {
   --bg-black: #111;
   --bg-secondary: #fdfdfd;
   --bg-black-secondary: #333;
-  --purple-1: #3E4095;
-  --purple-2: #3d3d79;
+  --purple: #3d3d79;
   --text-white: #fff;
   --text-gray: #8d8d8d;
   --text-gray-secondary: #535353;
-  --gray-border: #c3c3c3;
-  --black-footer: #222;
+  --gray-border: #72728E;
+  --black-footer: #222245;
 }
 
 p {
@@ -64,7 +63,7 @@ header .logos .ufma-logo {
 }
 
 header .logos .divider {
-  background: var(--purple-2);
+  background: var(--purple);
   height: 80%;
   margin: 0 10px ;
   width: 2px;
@@ -104,7 +103,7 @@ header nav button:hover {
 }
 
 header nav a, header nav .dropbtn {
-  color: var(--purple-2);
+  color: var(--purple);
   text-decoration: none;
 }
 
@@ -123,7 +122,7 @@ header nav a, header nav .dropbtn {
   display: block;
   width: 60px;
   height: 5px;
-  background: var(--purple-2);
+  background: var(--purple);
   bottom: 20px;
   left: calc(50% - 30px);
 }
@@ -151,7 +150,7 @@ mark:after {
   display: block;
   height: 4px;
   position: absolute;
-  background: var(--purple-2);
+  background: var(--purple);
   transition: height 0.3s ease 0s;
   z-index: 0;
   width: 100%;
@@ -166,41 +165,20 @@ mark:hover:after {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 0;
-  padding: 3.125rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   background: var(--black-footer);
 }
 
 footer .logos-footer {
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-
-footer .logos-footer a {
-  margin-right: 20px;
-  width: 100px;
-}
-
-footer .logos-footer .logo-observatorio img{
-  width: 100px;
-}
-
-
-footer .logos-footer a img {
-  width: 100px;
-}
-
-footer .logos-footer .logos-secundarias {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3px;
-}
-
-footer .logos-secundarias a {
-  background-color: #fff;
+footer .logos-footer a img{
+  width: 150px;
 }
 
 footer .infos {
@@ -209,6 +187,7 @@ footer .infos {
   justify-content: space-around;
   flex-direction: column;
   height: 100%;
+  margin-left: 75px;
 }
 
 footer .infos ul{
@@ -235,11 +214,13 @@ footer .infos ul {
 }
 
 footer .infos li {
+  align-items: center;
   display: flex;
   padding: 12px 0px;
 }
 
 footer .infos li p {
+  font-size: 12px;
   margin: 0;
   margin-left: 10px;
 }
@@ -307,7 +288,7 @@ footer .infos a {
 }
 
 footer .contato {
-  background: var(--purple-2);
+  background: var(--purple);
   border-radius: 6px;
   box-shadow: 0px 6px 10px 0px #252629;
   display: flex;
@@ -389,7 +370,7 @@ footer .contato a {
   }
   
   .overlay {
-    background-color: var(--purple-2);
+    background-color: var(--purple);
     background-color: #3D3D79f8;
     overflow-y: hidden;
     position: fixed;
@@ -456,11 +437,9 @@ footer .contato a {
     padding: 40px 0;
   }
 
-  
-  footer .container-logos-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  footer .logos-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100%;
   }
@@ -481,6 +460,7 @@ footer .contato a {
   }
 
   footer .contatos {
+    margin: 0 auto;
     width: 100%;
   }
   

@@ -142,7 +142,7 @@ main .container .card .pub-type{
 }
 
 main .container .card .pub-type .pub-type-cont {
-  color: var(--purple-2);
+  color: var(--purple);
   font-weight: bold;
   margin-left: 4px;
 }
@@ -208,9 +208,9 @@ main .container .card .button-show-more,
 main .container .card .button-download {
   align-items: center;
   background: none;
-  border: 1px solid var(--purple-2);
+  border: 1px solid var(--purple);
   border-radius: 25px;
-  color: var(--purple-2);
+  color: var(--purple);
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -224,7 +224,7 @@ main .container .card .button-download {
 
 main .container .card .button-show-more:hover,
 main .container .card .button-download:hover {
-  background: var(--purple-2);
+  background: var(--purple);
   color: var(--text-white);
 }
 
@@ -271,8 +271,8 @@ main .container .pagination .numbers {
 
 main .container .pagination .numbers div, main .container .pagination .prev, main .container .pagination .next {
   align-items: center;
-  background: var(--purple-2);
-  border: 1px solid var(--purple-2);
+  background: var(--purple);
+  border: 1px solid var(--purple);
   border-radius: 50%;
   color: var(--text-white);
   cursor: pointer;
@@ -286,25 +286,25 @@ main .container .pagination .numbers div, main .container .pagination .prev, mai
 
 main .container .pagination .prev:hover , main .container .pagination .next:hover {
   background: var(--bg);
-  color: var(--purple-2);
+  color: var(--purple);
 }
 
 main .container .pagination .numbers .active {
   background: var(--bg);
-  color: var(--purple-2);
+  color: var(--purple);
 }
 
 main .container .pagination .numbers .active:hover {
-  background: var(--purple-2);
+  background: var(--purple);
   color: #fff;
 }
 
 .line-purple {
-  background: var(--purple-2);
+  background: var(--purple);
 }
 
 .line-gray {
-  background: #c6c6c6;
+  background: #9D9DC4;
 }
 
 .line-purple, .line-gray {
@@ -481,9 +481,9 @@ main .container .pagination .numbers .active:hover {
 
   main .container .card button{
     background: none;
-    border: 1px solid var(--purple-2);
+    border: 1px solid var(--purple);
     border-radius: 25px;
-    color: var(--purple-2);
+    color: var(--purple);
     font-size: 16px;
     font-weight: 500;
     margin: 10px 15px 10px 0;
@@ -505,8 +505,8 @@ main .container .pagination .numbers .active:hover {
 
   main .container .pagination .numbers div, main .container .pagination .prev, main .container .pagination .next {
     align-items: center;
-    background: var(--purple-2);
-    border: 1px solid var(--purple-2);
+    background: var(--purple);
+    border: 1px solid var(--purple);
     border-radius: 50%;
     color: var(--text-white);
     cursor: pointer;
@@ -520,12 +520,12 @@ main .container .pagination .numbers .active:hover {
 
   main .container .pagination .prev:hover , main .container .pagination .next:hover {
     background: var(--bg);
-    color: var(--purple-2);
+    color: var(--purple);
   }
 
   main .container .pagination .numbers .active {
     background: var(--bg);
-    color: var(--purple-2);
+    color: var(--purple);
   }
 }
 

@@ -47,7 +47,7 @@ main .container .card-integrantes {
 
 main .container .card-integrantes .card {
   align-items: center;
-  border: 1px solid var(--purple-2);
+  border: 1px solid var(--purple);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ main .container .card-integrantes .card .details .infos {
 }
 
 main .container .card-integrantes .card .details .infos .name {
-  color: var(--purple-2);
+  color: var(--purple);
   font-size: 24px;
   font-weight: 500;
   height: 40px;

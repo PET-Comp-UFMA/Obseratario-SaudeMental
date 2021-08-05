@@ -34,9 +34,9 @@ body {
 }
 
 .container .card .details a {
-  border: 1px solid var(--purple-1);
+  border: 1px solid var(--purple);
   border-radius: 50px;
-  color: var(--purple-1);
+  color: var(--purple);
   font-size: 14px;
   padding: 10px;
   text-decoration: none;
@@ -44,12 +44,12 @@ body {
 }
 
 .container .card .details a:hover {
-  background: var(--purple-1);
+  background: var(--purple);
   color: var(--text-white);
 }
 
 .line-purple {
-  background: var(--purple-1);
+  background: var(--purple);
   height: 1px;
   margin: 30px 0;
   width: 100%;

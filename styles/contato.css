@@ -48,16 +48,16 @@ main .mensagem .nome, main .mensagem .assunto{
 }
  
 .mensagem textarea.textarea:focus, .mensagem input:focus{
-  border: 1px solid var(--purple-2);
+  border: 1px solid var(--purple);
   opacity: 1;
   outline: none;
 }
 
 main button {
   background: var(--bg);
-  border: 1px solid var(--purple-2);
+  border: 1px solid var(--purple);
   border-radius: 50px;
-  color: var(--purple-2);
+  color: var(--purple);
   cursor: pointer;
   display: block;
   margin: auto;
@@ -68,7 +68,7 @@ main button {
 }
 
 main button:hover {
-  background: var(--purple-2);
+  background: var(--purple);
   color: var(--text-white);
 }
 

@@ -32,7 +32,7 @@ main .container .noticia-especifica h1.titulo-noticia {
   text-align: center;
   margin-bottom: 25px;
   padding-bottom: 12px;
-  border-bottom: 4px solid var(--purple-2);
+  border-bottom: 4px solid var(--purple);
 }
 
 main .container .noticia-especifica .image {
@@ -61,9 +61,9 @@ main .container .noticia-especifica p.paragrafo-noticia {
 main .container .button-back {
   align-items: center;
   background: none;
-  border: 1px solid var(--purple-2);
+  border: 1px solid var(--purple);
   border-radius: 25px;
-  color: var(--purple-2);
+  color: var(--purple);
   cursor: pointer;
   display: flex;
   float: right;
@@ -77,7 +77,7 @@ main .container .button-back {
 
 main .container .button-back:hover,
 main .container .button-back:focus {
-  background: var(--purple-2);
+  background: var(--purple);
   color: var(--text-white);
 }
 
