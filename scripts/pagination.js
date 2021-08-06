@@ -8,6 +8,18 @@ const html = {
 }
 
 let perPage = 15
+
+//- correção botão de paginação
+//------------------------------------------------------
+let paginate = document.getElementById("paginate");
+let items = document.querySelectorAll(".item");
+let pagination = document.querySelector(".pagination");
+
+if (items.length == 0){
+  pagination.style.display = "none";
+}
+//-------------------------------------------------------
+
 const state = {
   page: 1,
   perPage,
@@ -136,3 +148,4 @@ function init() {
 }
 
 init()
+
