@@ -199,14 +199,10 @@
         <!-- fim -->
       <?php
         }
-      }
       ?>
         </ul>
-        <?php if(!$num_results > 0){
-        	echo("<p style='text-align:center'>Sem resultados</p>");
-        }
-        	?> 
       </section>
+
       <div class="pagination"> <!-- botões -->
         <div class="prev">
           <span class="material-icons">
@@ -224,6 +220,13 @@
           </span>
         </div>
       </div>
+      <?php }else{ ?>
+        <li class="item">
+          <div class="resultados">
+            <h2>Sem resultados!</h2>
+          </div>
+        </li>
+        <?php } ?>
     </section>
   </main>
 

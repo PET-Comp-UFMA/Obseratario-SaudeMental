@@ -74,7 +74,6 @@ main .container .search-button:focus {
   opacity: .6;
 }
 
-
 main .container .list,
 main .container .list-authors,
 main .container .list-tags {
@@ -83,6 +82,10 @@ main .container .list-tags {
 
 main .container .list .item {
   padding: 4px;
+}
+
+.resultados {
+  text-align: center;
 }
 
 main .container .card {
