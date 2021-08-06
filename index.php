@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatório Saúde Mental</title>
   
-  <link rel="icon" href="./assets/images/LogoObservatorio2.png">
+  <link rel="icon" href="./assets/images/logo-observaorio-sem-texto.png">
 
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -28,7 +28,7 @@
     <section id="slider">
       <ul class="slider-content">
         <li class="slider-item fade">
-          <div class="texto-banner" style="background: url(./assets/images/photo-10.jpg); 
+          <div class="texto-banner" style="background: url(./assets/images/photo-3.jpg); 
           background-size: 100% 100%, cover">
             <div class="intro-noticia">
               <h3>Observatório Saúde Mental e Políticas sobre Drogas</h3>
@@ -86,16 +86,16 @@
       <div class="resumo-dexters">
         <div class="images">
           <figure class="gallery__item gallery__item--1">
-            <img src="./assets/images/photo-8.jpg" alt="Gallery image 1" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-5.jpg" alt="Gallery image 1" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--2">
-            <img src="./assets/images/photo-7.jpg" alt="Gallery image 2" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-2.jpg" alt="Gallery image 2" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--3">
-            <img src="./assets/images/photo-9.jpg" alt="Gallery image 3" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-4.jpg" alt="Gallery image 3" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--4">
-            <img src="./assets/images/photo-5.jpg" alt="Gallery image 4" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-1.jpg" alt="Gallery image 4" loading="lazy" class="gallery__img">
         </div>
         <div class="text-dexters">
           <h1>Conheça o <mark class="highlight">Observatório</mark></h1>

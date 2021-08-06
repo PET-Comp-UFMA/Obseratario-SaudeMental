@@ -1,6 +1,6 @@
 <header class="dark-mode">
     <div class="logos">
-      <a href="./index.php"><img src="./assets/images/LogoObservatorio2.png" alt="Logo Observatório" class="observatorio-logo"></a>
+      <a href="./index.php"><img src="./assets/images/logo-observatorio-sem-texto.png" alt="Logo Observatório" class="observatorio-logo"></a>
       <div class="divider"></div>
       <a href="http://www.uvanet.br" target="_blank"><img src="./assets/images/logos/uva-no-background.png" alt="Logo UVA" class="ufma-logo"></a>
     </div>
