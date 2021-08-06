@@ -1,15 +1,14 @@
 <?php
-$hostname="localhost";
-$bd="observatorio_db";
-$usuario="root";
-$senha="";
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bd);
+    $hostname="localhost";
+    $bd="observatorio_db";
+    $usuario="root";
+    $senha="";
 
-if($mysqli->connect_errno){
-    echo "falha ao conectar ao banco";
-    
-}
+    $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
 
+    if($mysqli->connect_errno){
+        echo "falha ao conectar ao banco";   
+    }
 
 ?>
