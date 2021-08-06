@@ -156,9 +156,8 @@
         
         <div class="line-gray"></div>
         <!-- fim -->
-      <?php
+        <?php
         }
-      }
       ?>
         </ul>
       </section>
@@ -180,9 +179,15 @@
           </span>
         </div>
       </div>
+      <?php }else{ ?>
+        <li class="item">
+          <div class="resultados">
+            <h2>Sem resultados!</h2>
+          </div>
+        </li>
+        <?php } ?>
     </section>
   </main>
-
   <?php
     include('footer.php');
   ?>
