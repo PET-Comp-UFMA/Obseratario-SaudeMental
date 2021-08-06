@@ -110,8 +110,7 @@
        <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
-            $query = "SELECT * FROM trabalhos_publicados WHERE Tipo LIKE '".strtr($tipo, $caracteres_sem_acento) ."%' and (Titulo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%' 
-                      or Resumo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%') and Autor LIKE '%". strtr($autor, $caracteres_sem_acento) ."%' and  Palavras_Chave LIKE 
+            $query = "SELECT * FROM trabalhos_publicados WHERE Tipo LIKE '".strtr($tipo, $caracteres_sem_acento) ."%' and (Titulo LIKE '%". strtr($pesquisa, $caracteres_sem_acento) . "%') and Autor LIKE '%". strtr($autor, $caracteres_sem_acento) ."%' and  Palavras_Chave LIKE 
                       '%". strtr($palavra_chave, $caracteres_sem_acento)  ."%' ORDER BY Data DESC;";
 
             $result = mysqli_query($mysqli, $query);
