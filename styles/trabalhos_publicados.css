@@ -237,20 +237,14 @@ main .container .card .button-download span {
   font-weight: 400;
 }
 
-main .container .card .button-download {
-  bottom: 0;
-  float: right;
-  right: 100px;
-}
-
 main .container .authors{
   padding: 0px 15px;
 }
 
 main .container .card .card-bottom{
+  flex-direction: column;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 main .container .card .card-bottom .data{
@@ -359,9 +353,9 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
-  main .container .card .card-bottom .container-data{
+  /* main .container .card .card-bottom .container-data{
     text-align: end;
-  }
+  } */
 
   main .container .filtro .publication label,
   main .container .filtro .author label,
@@ -481,8 +475,7 @@ main .container .pagination .numbers .active:hover {
     padding: 0;
   }
 
-
-  main .container .card button{
+  main .container .card button {
     background: none;
     border: 1px solid var(--purple);
     border-radius: 25px;
@@ -533,15 +526,15 @@ main .container .pagination .numbers .active:hover {
 }
 
 @media screen and (max-width: 430px) {
-  main .container .card .details .share .links{
+  main .container .card .details .share .links {
   width: 90%;
   text-align: center;
   margin-left: 2vh;
   margin-right: auto;
   display: flex;
   justify-content: space-around;
-}
-  main .container .card .details .share .links a{
+  }
+  main .container .card .details .share .links a {
     margin: auto 2vh auto 2vh;
   }
 

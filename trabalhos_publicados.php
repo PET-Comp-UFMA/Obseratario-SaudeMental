@@ -146,7 +146,7 @@
                 file_download
               </span>
             </a>
-        </div>
+          </div>
           <div class="container-data">
             <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
           </div>
