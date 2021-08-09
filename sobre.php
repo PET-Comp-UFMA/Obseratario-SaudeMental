@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="./assets/images/integrantes/helianda_linhares_aragão.png" alt="" loading="lazy">
+          <img src="./assets/images/integrantes/helianda_linhares_aragao.png" alt="" loading="lazy">
           <div class="details">
             <div class="infos">
               <p class="name">Heliandra Linhares <br> Aragão</p>
