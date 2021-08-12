@@ -351,7 +351,6 @@ footer .contato a {
   }
 
   header .logos a .observatorio-logo {
-    height: 50px;
     width: 60%;
   }
 
@@ -443,6 +442,10 @@ footer .contato a {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100%;
+  }
+
+  footer .logos-footer a {
+    margin: 0 auto;
   }
 
   footer .infos {
