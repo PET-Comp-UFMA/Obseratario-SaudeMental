@@ -33,7 +33,7 @@
       <p>Os observatórios são mecanismos que fornece informações estratégicas para auxiliar na identificação de ameaças, oportunidades e tendências, além de oferecer subsídios à tomada de decisão de um determinado setor, seja em nível regional, nacional ou internacional A principal vantagem de um observatório é a obtenção de uma visão ampla, integrando perspectivas regionais e locais, permitindo o desenvolvimento científico e tecnológico local sem perder de vista a perspectiva nacional(SCHMIDT E SILVA, 2018). Nos últimos tempos estão sendo criados observatórios dos mais diversos tipos, com o intuito de monitorar sistematicamente o funcionamento de um setor ou temáticas específicas, destacando-se: racismo, trabalho, imigração, relações industriais, ciência e tecnologia, violência, meio ambiente, política etc., dentre outras. No caso específico deste, o objeto é o setor de Saúde Mental e Política sobre Drogas.</p>
 
       <p class="reference">*SCHMIDT, Nádia Solange; SILVA, Christian Luiz da. Observatório como instrumento de prospectiva estratégica para as Instituições de Ciência e Tecnologia (ICTs). Interações (Campo Grande), Campo Grande , v. 19, n. 2, p. 387-400, June 2018 . Available from <a href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1518-70122018000200387&lng=en&nrm=iso" target="_blank"><span class="italic">Scielo Brasil</span></a>. access on 25 June 2020. <a href="http://dx.doi.org/10.20435/9inter.v19i2.1689" target="_blank"><span class="italic">DOI</span></a>.</p>
-
+      
       <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
         <h2>Integrantes</h2>
       </div>
