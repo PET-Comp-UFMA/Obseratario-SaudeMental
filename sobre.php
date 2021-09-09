@@ -35,29 +35,38 @@
       <p class="reference">*SCHMIDT, Nádia Solange; SILVA, Christian Luiz da. Observatório como instrumento de prospectiva estratégica para as Instituições de Ciência e Tecnologia (ICTs). Interações (Campo Grande), Campo Grande , v. 19, n. 2, p. 387-400, June 2018 . Available from <a href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1518-70122018000200387&lng=en&nrm=iso" target="_blank"><span class="italic">Scielo Brasil</span></a>. access on 25 June 2020. <a href="http://dx.doi.org/10.20435/9inter.v19i2.1689" target="_blank"><span class="italic">DOI</span></a>.</p>
       
       <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
-        <h2>Integrantes</h2>
+        <h2>Coordenação</h2>
       </div>
-      <div class="card-integrantes">
-        <div class="card">
-          <img src="./assets/images/integrantes/claudine_carneiro_aguiar.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Claudine Carneiro Aguiar</p>
-              <p class="occupation">Coordenadoria de Políticas sobre Drogas</p>
-              <p class="local">Secretaria de Saúde de Sobral, Ceará</p>
-            </div>
-          </div>
-        </div>
+      <div class="card-coordenacao">
+        
         <div class="card">
           <img src="./assets/images/integrantes/eliany_nazare_oliveira.png" alt="" loading="lazy">
           <div class="details">
             <div class="infos">
               <p class="name">Eliany Nazaré <br> Oliveira</p>
-              <p class="occupation">Grupo de Estudo e Pesquisa Saúde Mental e Cuidado</p>
+              <p class="occupation">Coordenadora geral<br/><br/>Grupo de Estudo e Pesquisa Saúde Mental e Cuidado</p>
               <p class="local">Universidade Estadual do Vale do Acaraú</p>
             </div>
           </div>
         </div>
+        
+        <div class="card">
+          <img src="./assets/images/integrantes/claudine_carneiro_aguiar.png" alt="" loading="lazy">
+          <div class="details">
+            <div class="infos">
+              <p class="name">Claudine Carneiro Aguiar</p>
+              <p class="occupation">Coord. adjunta<br/><br/>Coordenadoria de Políticas sobre Drogas</p>
+              <p class="local">Secretaria de Saúde de Sobral, Ceará</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+        <h2>Integrantes</h2>
+      </div>
+      <div class="card-integrantes">
+        
         <div class="card">
           <img src="./assets/images/integrantes/helianda_linhares_aragao.png" alt="" loading="lazy">
           <div class="details">

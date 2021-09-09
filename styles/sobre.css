@@ -38,15 +38,15 @@ main .container .reference {
   text-decoration: none;
 }
 
-main .container .card-integrantes {
+main .container .card-integrantes, .card-coordenacao {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   row-gap: 20px;
+  column-gap: 5 px;
 }
 
-main .container .card-integrantes .card {
+main .container .card-integrantes .card, .card-coordenacao .card{
   align-items: center;
-  border: 1px solid var(--purple);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -55,13 +55,22 @@ main .container .card-integrantes .card {
   width: 270px;
 }
 
-main .container .card-integrantes .card img {
+main .container .card-integrantes .card {
+  border: 1px solid var(--text-gray);
+}
+
+main .container .card-coordenacao .card {
+  border: 1px solid var(--purple);
+  margin-bottom: 20px;  
+}
+
+main .container .card img {
   border-radius: 5px;
   height: 200px;
   width: 200px;
 }
 
-main .container .card-integrantes .card .details .infos {
+main .container .card .details .infos {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -69,9 +78,8 @@ main .container .card-integrantes .card .details .infos {
   padding: 10px;
 }
 
-main .container .card-integrantes .card .details .infos .name {
+main .container .card .details .infos .name {
   color: var(--purple);
-  font-size: 24px;
   font-weight: 500;
   height: 40px;
   text-align: center;
@@ -80,7 +88,7 @@ main .container .card-integrantes .card .details .infos .name {
   font-size: 18px;
 }
 
-main .container .card-integrantes .card .details .infos .occupation {
+main .container .card .details .infos .occupation {
   align-items: center;
   color: var(--text-gray);
   display: flex;
@@ -93,7 +101,7 @@ main .container .card-integrantes .card .details .infos .occupation {
   width: 200px;
 }
 
-main .container .card-integrantes .card .details .infos .local {
+main .container .card .details .infos .local {
   color: var(--text-gray);
   font-size: 14px;
   text-align: center;
