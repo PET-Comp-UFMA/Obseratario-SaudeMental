@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
 }
@@ -14,7 +14,7 @@ html {
   --text-white: rgb(70, 55, 55);
   --text-gray: #8d8d8d;
   --text-gray-secondary: #535353;
-  --gray-border: #72728E;
+  --gray-border: #72728e;
   --black-footer: #222245;
 }
 
@@ -22,7 +22,6 @@ p {
   padding: 0;
   margin: 0 0 20px 0;
 }
-
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -65,7 +64,7 @@ header .logos .ufma-logo {
 header .logos .divider {
   background: var(--purple);
   height: 80%;
-  margin: 0 10px ;
+  margin: 0 10px;
   width: 2px;
 }
 
@@ -75,7 +74,8 @@ header nav {
   margin-right: 100px;
 }
 
-header .open-btn, header .close-btn {
+header .open-btn,
+header .close-btn {
   display: none;
 }
 
@@ -96,13 +96,13 @@ header nav button {
   padding: 8px;
 }
 
-
 header nav button:hover {
   background: var(--bg-secondary);
-  opacity: .7;
+  opacity: 0.7;
 }
 
-header nav a, header nav .dropbtn {
+header nav a,
+header nav .dropbtn {
   color: var(--purple);
   text-decoration: none;
 }
@@ -117,7 +117,7 @@ header nav a, header nav .dropbtn {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -139,11 +139,11 @@ mark {
   background: none;
   color: var(--text-gray-secondary);
   text-decoration: none;
-  
+
   display: inline-block;
   position: relative;
 }
-mark:after {    
+mark:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -155,30 +155,34 @@ mark:after {
   z-index: 0;
   width: 100%;
 }
-mark:hover:after { 
-  height: 10px; 
-  left: 0; 
+mark:hover:after {
+  height: 10px;
+  left: 0;
 }
 
 /* FOOTER */
-
 
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 0;
   padding: 1.25rem 1.25rem;
-  background: var(--black-footer);
+  background: var(--bg);
+  border-top: 2px solid var(--black-footer);
 }
 
 footer .logos-footer {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-footer .logos-footer a img{
-  width: 150px;
+footer .logos-footer a img {
+  border: 3px solid var(--black-footer);
+  border-top: 1px solid var(--black-footer);
+  border-left: 1px solid var(--black-footer);
+  padding: 2px;
+  width: 140px;
 }
 
 footer .infos {
@@ -190,7 +194,7 @@ footer .infos {
   margin-left: 75px;
 }
 
-footer .infos ul{
+footer .infos ul {
   width: 90%;
   margin: auto;
   display: flex;
@@ -198,38 +202,37 @@ footer .infos ul{
   align-items: flex-start;
 }
 
-footer .infos ul .numeros-contatos{
+footer .infos ul .numeros-contatos {
   letter-spacing: 2px;
 }
 
-footer h4{
+footer h4 {
   padding: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--text-white);
 }
 
-footer .infos ul {
-  list-style: none;
-}
-
-footer .infos li {
+footer .infos > div {
   align-items: center;
+  justify-content: center;
   display: flex;
   padding: 12px 0px;
 }
 
-footer .infos li p {
+footer .infos div p {
   font-size: 14px;
   margin: 0;
   margin-left: 10px;
+  margin-bottom: 0;
 }
 
 footer .infos img {
   width: 25px;
 }
 
-footer .infos a, footer .infos p {
+footer .infos a,
+footer .infos p {
   color: var(--text-white);
   margin-left: 20px;
 }
@@ -251,8 +254,9 @@ footer .contatos {
   /* justify-content: flex-end; caso precise colocar no canto inferior direito*/
 }
 
-footer .contatos .contato{
+footer .contatos .contato {
   align-self: flex-start;
+  color: #fff;
   width: 180px;
   text-decoration: none;
   font-size: 17px;
@@ -274,7 +278,7 @@ footer .contatos img {
   width: 25px;
 }
 
-footer .contatos a{
+footer .contatos a {
   color: var(--text-white);
 }
 
@@ -304,39 +308,46 @@ footer .contato img {
 }
 
 footer .contato a {
-  color: var(--text-white);
+  color: var(--bg-secondary);
   font-size: 14px;
   text-decoration: none;
 }
 
 footer .contato a {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .1}
-  to {opacity: 1}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .1}
-  to {opacity: 1}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 800px) {
-
   header {
     height: 70px;
   }
 
-  header .logos{
+  header .logos {
     margin: auto 0;
     margin-left: 10px;
     width: 100px;
@@ -345,8 +356,9 @@ footer .contato a {
   header nav {
     margin: 0;
   }
-  
-  header .logos .ufma-logo, header .divider {
+
+  header .logos .ufma-logo,
+  header .divider {
     display: none;
   }
 
@@ -354,7 +366,8 @@ footer .contato a {
     width: 60%;
   }
 
-  header .open-btn, header .close-btn {
+  header .open-btn,
+  header .close-btn {
     display: block;
   }
 
@@ -368,17 +381,17 @@ footer .contato a {
   ul li {
     padding: 10px;
   }
-  
+
   .overlay {
     background-color: var(--purple);
-    background-color: #3D3D79f8;
+    background-color: #3d3d79f8;
     overflow-y: hidden;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
 
-    transition: .4s;
+    transition: 0.4s;
     height: 0%;
     width: 100%;
   }
@@ -388,14 +401,16 @@ footer .contato a {
     text-align: center;
   }
 
-  .overlay a, .overlay button, .overlay .dropbtn {
+  .overlay a,
+  .overlay button,
+  .overlay .dropbtn {
     display: flex;
 
     color: var(--text-white);
     font-size: 18px;
     text-decoration: none;
 
-    transition: .2s;
+    transition: 0.2s;
   }
 
   .overlay .close-btn {
@@ -419,14 +434,15 @@ footer .contato a {
     width: 30px;
   }
 
-  header nav ul li .dropdown .dropdown-content-sobre a, header nav ul li .dropdown .dropdown-content-produtos a {
+  header nav ul li .dropdown .dropdown-content-sobre a,
+  header nav ul li .dropdown .dropdown-content-produtos a {
     color: #000;
   }
 
   header nav .overlay-content ul li .dropdown .dropbtn span {
     margin-left: -5px;
   }
-  
+
   .dropbtn {
     color: var(--text-white);
     display: flex;
@@ -437,7 +453,7 @@ footer .contato a {
     padding: 40px 0;
   }
 
-  footer .logos-footer{
+  footer .logos-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -465,39 +481,36 @@ footer .contato a {
   }
 }
 
-@media (min-width: 1051px ){
-
+@media (min-width: 1051px) {
   footer .infos {
-    padding:0 3rem;
+    padding: 0 3rem;
   }
 }
 
-@media (max-width: 1050px){
-    
+@media (max-width: 1050px) {
   footer {
-      display: block;
-      padding: 2rem 8rem;
+    display: block;
+    padding: 2rem 8rem;
   }
 
   footer .projetos-footer {
-      display: block;
+    display: block;
   }
 
-  footer h4{
-      color: #919496;
-      text-align: start;
-      width: 100%;
-      background: none;
-      padding-top: 1rem;
-      text-indent: 2px;
-      margin-top: 1rem;
-      border-bottom: 1px solid #919496;
+  footer h4 {
+    color: #919496;
+    text-align: start;
+    width: 100%;
+    background: none;
+    padding-top: 1rem;
+    text-indent: 2px;
+    margin-top: 1rem;
+    border-bottom: 1px solid #919496;
   }
 
   footer .logos-footer {
     margin-bottom: 20px;
   }
-  
 }
 
 @media (max-width: 700px) {
@@ -506,9 +519,9 @@ footer .contato a {
   }
 }
 
-@media (max-width:470px){
+@media (max-width: 470px) {
   footer {
-    padding: 0.50rem;
+    padding: 0.5rem;
   }
 
   footer .logos-footer img,
@@ -519,16 +532,16 @@ footer .contato a {
   footer .infos li {
     margin-left: -10px;
   }
-  
-  footer .infos li img{
+
+  footer .infos li img {
     width: 20px;
   }
 
   footer .infos li p {
     font-size: 12px;
   }
-  
-  footer .contatos .contato{
+
+  footer .contatos .contato {
     width: 140px;
   }
 
@@ -536,9 +549,7 @@ footer .contato a {
     width: 20px;
   }
 
-  footer .contatos .contato{
+  footer .contatos .contato {
     font-size: 13px;
   }
-
-  
 }

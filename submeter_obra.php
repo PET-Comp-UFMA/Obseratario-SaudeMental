@@ -25,7 +25,7 @@
         </div>
         <section class="container">
         <ul class="regras">
-            <li>Envie um e-mail para: atendimento@gesam.com.br.</li>
+            <li>Envie um e-mail para: observatoriodesaudemental@gmail.com</li>
             <li>Com assunto: [SUBMISSAO para Avaliação da Obra] (Título da obra).</li>
             <li>No corpo do texto, Preencha:</li>
             <ul>
