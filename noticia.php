@@ -1,6 +1,6 @@
 <?php
 	require_once('conexao.php');
-    if(!isset($_GET['Noticia'])){
+    if(!isset($_GET['idNoticia'])){
         
         //No servidor usar essa:
         $URL="http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/ListaNoticias.php";
@@ -13,26 +13,9 @@
         // die();
     }else{
 
-    $parametro = $_GET['Noticia'];
-    
-        for($i=0;$i < strlen($parametro);$i++){
-        	if(!is_numeric($parametro[$i])){
-        	    
-                //No servidor usar essa:
-                
-        	    $URL="http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/ListaNoticias.php";
-                echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
-                echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">'; 
-                die();
-                
-                //No localhost usar essa:
-                //header('Location: ListaNoticias.php');
-                //die();  
-    	    }  
-        }
-
+    $parametro = $_GET['idNoticia'];
     mysqli_select_db($mysqli, $bd) or die("Could not select database");	
-    $stmt = $mysqli->prepare('SELECT * FROM noticias WHERE idNoticia =  ?');
+    $stmt = $mysqli->prepare("SELECT * FROM `noticias` WHERE `idNoticia` = ?");
     $stmt->bind_param('i', $parametro);
     $stmt->execute();
     $stmt->store_result();

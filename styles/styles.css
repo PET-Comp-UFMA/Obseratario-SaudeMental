@@ -406,7 +406,7 @@ footer .contato a {
   .overlay .dropbtn {
     display: flex;
 
-    color: var(--text-white);
+    color: white;
     font-size: 18px;
     text-decoration: none;
 

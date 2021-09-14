@@ -25,7 +25,7 @@
       <div class="details">
         <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
         <p>Description: <?php print_r(utf8_encode($row['Descricao'])) ?></p>
-        <a href="?Noticia=<?php print_r(utf8_encode($row['idNoticia']))?>">Ver mais</a>
+        <a href="<?php print_r(str_replace(' ', '+', utf8_encode($row['Titulo'])))?>-<?php print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>
       </div>
     </div>
     <div class="line-gray"></div>
