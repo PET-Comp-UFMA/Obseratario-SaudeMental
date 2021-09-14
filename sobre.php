@@ -18,6 +18,7 @@
   
   <?php
     include('header.php');
+    require_once('conexao.php');
   ?>
 
   <main class="fade">
@@ -38,115 +39,69 @@
         <h2>Coordenação</h2>
       </div>
       <div class="card-coordenacao">
-        
+        <?php
+            mysqli_select_db($mysqli, $bd) or die("Could not select database");
+
+            $query = "SELECT * FROM integrantes WHERE tipo='coordenacao';";
+
+            $result = mysqli_query($mysqli, $query);
+            $num_results = mysqli_num_rows($result);
+
+            if($num_results > 0) {
+                for($i=0; $i<$num_results; $i++) {
+                    $row = mysqli_fetch_array($result);
+        ?>
+
         <div class="card">
-          <img src="./assets/images/integrantes/eliany_nazare_oliveira.png" alt="" loading="lazy">
+          <img src="./assets/images/integrantes/<?php print_r(utf8_encode($row['imagem']))?>" alt="" loading="lazy">
           <div class="details">
             <div class="infos">
-              <p class="name">Eliany Nazaré <br> Oliveira</p>
-              <p class="occupation">Coordenadora geral<br/><br/>Grupo de Estudo e Pesquisa Saúde Mental e Cuidado</p>
-              <p class="local">Universidade Estadual do Vale do Acaraú</p>
+              <p class="name"><?php print_r(utf8_encode($row['nome']))?></p>
+              <p class="occupation"><?php print_r(utf8_encode($row['ocupacao']))?></p>
+              <p class="local"><?php print_r(utf8_encode($row['local']))?></p>
             </div>
           </div>
         </div>
         
-        <div class="card">
-          <img src="./assets/images/integrantes/claudine_carneiro_aguiar.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Claudine Carneiro Aguiar</p>
-              <p class="occupation">Coord. adjunta<br/><br/>Coordenadoria de Políticas sobre Drogas</p>
-              <p class="local">Secretaria de Saúde de Sobral, Ceará</p>
-            </div>
-          </div>
-        </div>
+        <?php
+                }
+            }
+        ?>
 
       </div>
       <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
         <h2>Integrantes</h2>
       </div>
       <div class="card-integrantes">
+      <?php
+            mysqli_select_db($mysqli, $bd) or die("Could not select database");
+
+            $query = "SELECT * FROM integrantes WHERE tipo='integrante';";
+
+            $result = mysqli_query($mysqli, $query);
+            $num_results = mysqli_num_rows($result);
+
+            if($num_results > 0) {
+                for($i=0; $i<$num_results; $i++) {
+                    $row = mysqli_fetch_array($result);
+        ?>
+
+        <div class="card">
+          <img src="./assets/images/integrantes/<?php print_r(utf8_encode($row['imagem']))?>" alt="" loading="lazy">
+          <div class="details">
+            <div class="infos">
+              <p class="name"><?php print_r(utf8_encode($row['nome']))?></p>
+              <p class="occupation"><?php print_r(utf8_encode($row['ocupacao']))?></p>
+              <p class="local"><?php print_r(utf8_encode($row['local']))?></p>
+            </div>
+          </div>
+        </div>
         
-        <div class="card">
-          <img src="./assets/images/integrantes/helianda_linhares_aragao.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Heliandra Linhares <br> Aragão</p>
-              <p class="occupation">Assistente Social </p>
-              <p class="local">Coordenadora do Centro de Atenção Psicossocial Álcool e Outras Drogas de Sobral</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/joao_breno_cavalcante_costa.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">João Breno <br> Cavalcante Costa</p>
-              <p class="occupation">Enfermeiro</p>
-              <p class="local">Hospital do Coração de Sobral de Ceará</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/alexia_gomes_souza.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Alexia Gomes <br> Souza</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/caio_san_rodrigues.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Caio San <br> Rodrigues</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/emilia_do_nascimento_silva.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Emilia do Nascimento <br> Silva</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/leticia_mara_cavalcante_lima.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Leticia Mara <br> Cavalcante Lima</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/lidia_cristina_monteiro_da_silva.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Lidia Cristina <br> Moneiro da Silva</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/integrantes/lorenna_saraiva_viana.png" alt="" loading="lazy">
-          <div class="details">
-            <div class="infos">
-              <p class="name">Lorenna Saraiva <br> Viana</p>
-              <p class="occupation">Estudante do Curso de Graduaçao em Enfermagem</p>
-              <p class="local">Universidade Estadual Vale do Acaraú</p>
-            </div>
-          </div>
-        </div>
+        <?php
+                }
+            }
+        ?>
+        
       </div>
     </section>
   </main>
