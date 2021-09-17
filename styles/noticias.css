@@ -75,3 +75,46 @@ body {
     padding-left: 0;
   }
 }
+
+/*Styles de paginação*/
+.pagination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.pagination .numbers {
+  display: flex;
+}
+
+.pagination .numbers div, .pagination .prev, .pagination .next {
+  align-items: center;
+  background: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  color: var(--text-white);
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  margin: 0 4px;
+  padding: 8px;
+  width: 25px;
+}
+
+.pagination .prev:hover , .pagination .next:hover {
+  background: var(--bg);
+  color: var(--purple);
+}
+
+.pagination .numbers .active {
+  background: var(--bg);
+  color: var(--purple);
+}
+
+.pagination .numbers .active:hover {
+  background: var(--purple);
+  color: #fff;
+}
+/*Fim de styles de paginação*/

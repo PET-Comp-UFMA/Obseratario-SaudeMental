@@ -105,7 +105,7 @@
     </form>
       <!-- START  -->
       
-      <section id="paginate">
+    <section id="paginate">
     <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
        <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
@@ -200,7 +200,7 @@
         }
       ?>
         </ul>
-      </section>
+      </section> <!--END section id="paginate"-->
 
       <div class="pagination"> <!-- botões -->
         <div class="prev">
@@ -226,7 +226,7 @@
           </div>
         </li>
         <?php } ?>
-    </section>
+    </section> <!--END section class="container"-->
   </main>
 
     
