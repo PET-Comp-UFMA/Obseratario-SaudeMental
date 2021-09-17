@@ -39,6 +39,7 @@
 
 <?php
     require_once('conexao.php');
+    require_once('scripts.php/utils.php')
 ?>
 
 <!DOCTYPE html>
@@ -138,7 +139,9 @@
             <p class="type">Compartilhe</p>
             <div class="links ">
               <?php 
-                $url =  "http://localhost:8080/Observatorio-SaudeMental/busca.php?publication=".urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])))." &author=". urlencode(utf8_encode($row['Autor'])) ."&text=Publicado+em+Observatório+de+Saúde+Mental";
+                $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
+                $baseUrl = str_replace("busca.php", "", $baseUrl); //removendo "busca.php" do link de compartilhamento
+                $url =  $baseUrl."busca.php?publication=".urlencode(utf8_encode($row['Titulo']))."&author=". urlencode(utf8_encode($row['Autor']));
               ?>
               <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
