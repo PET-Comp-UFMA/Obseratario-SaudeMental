@@ -4,14 +4,18 @@ data = Array.from(data)
 const html = {
   get(element) {
     return document.querySelector(element)
+    //retorna primeiro elemento com a classe de "element"
   }
 }
 
-let perPage = 15
+let perPage = 5
 
 //- correção botão de paginação
 //------------------------------------------------------
+//recebe section "paginate"
 let paginate = document.getElementById("paginate");
+
+
 let items = document.querySelectorAll(".item");
 let pagination = document.querySelector(".pagination");
 
