@@ -46,8 +46,9 @@ CREATE TABLE `article` (
 -- Extraindo dados da tabela `article`
 --
 
+-- Artigo Verificado e Padronizado
 INSERT INTO `article` (`idArticle`, `Title`, `Authors`, `Journal`, `Year`, `Volume`, `Number`, `Pages`, `Month`, `Data_Publicacao`, `Palavras_chave`) VALUES
-(1, '\"DOIDIÇA\" E DEPRESSÃO: AS CONCEPÇÕES DOS USUÁRIOS DA REDE DE ATENÇÃO INTEGRAL À SAÚDE MENTAL DE SOBRAL-CE', 'Costa, Maria Suely Alves', '', 2008, '', '', '', 'Jan', '01/01/2008', 'epressão, Doidice, S');
+(1, '\"Doidiça\" e Depressão: As Concepções dos Usuários da Rede de Atenção Integral à Saúde Mental de Sobral-CE', 'Costa, Maria Suely Alves', '', 2008, '', '', '', 'Jan', '01/01/2008', 'Expressão, Doidice, S');
 
 -- --------------------------------------------------------
 
@@ -75,8 +76,9 @@ CREATE TABLE `book` (
 -- Extraindo dados da tabela `book`
 --
 
+-- Artigo Verificado e Padronizado
 INSERT INTO `book` (`idBook`, `Title`, `Authors`, `Publisher`, `Year`, `Volume`, `Number`, `Series`, `Edition`, `Month`, `Note`, `Data_Publicacao`, `Palavras_chave`) VALUES
-(1, 'SAÚDE MENTAL: DESAFIOS DA PREVENÇÃO, DIAGNÓSTICO, TRATAMENTO E CUIDADO NA SOCIEDADE MODERNA', 'Freitas, Guilherme Barroso Langoni and Martins, Guilherme Augusto G', 'Paraná: Editora Pasteur', 2021, '', '', '', '', 'Jan', '', '01/01/2021', 'Cuidado, Saúde mental, Saúde Pública.');
+(1, 'Saúde Mental: Desafios da Prevenção, Diagnóstico, Tratamento e Cuidado na Sociedade Moderna','Freitas, Guilherme Barroso L. and Martins, Guilherme Augusto G', 'Paraná: Editora Pasteur', 2021, 'Volume 1', '', '', '1ª Edição', 'Jan', '', '01/01/2021', 'Cuidado, Saúde Mental, Saúde Pública.');
 
 -- --------------------------------------------------------
 
@@ -124,10 +126,10 @@ CREATE TABLE `mastersthesis` (
 --
 -- Extraindo dados da tabela `mastersthesis`
 --
-
+-- Artigos padronizados, apenas o primeiro está Verificado
 INSERT INTO `mastersthesis` (`idMastersThesis`, `Title`, `Authors`, `School`, `Address`, `Year`, `Data_Publicacao`, `Palavras_chave`) VALUES
-(1, 'Tecnologia educativa digital para a promoção da saúde mental de adolescentes: Estudo de validação por especialistas', 'Farias, Quiteria Larissa Teodoro', 'Universidade Federal do Ceará, Sobral, CE, Brasil', '', 2021, '01/01/2021', 'Promoção da Saúde, Saúde do Adolescente, Saúde Mental'),
-(2, 'ATENÇÃO A SAÚDE MENTAL NO MUNICIPIO DE SOBRAL - CE', 'Quinderé, Paulo Henrique Dias', ' Universidade Estadual do Ceará, Fortaleza, CE, Brasil', '', 2008, '01/01/2008', 'Assistência em saúde mental , Níveis de atenção à saúde , Prestação integrada de cuidados de saúde');
+(1, 'Tecnologia Educativa Digital para a Promoção da Saúde Mental de Adolescentes: Estudo de Validação por Especialistas', 'Farias, Quiteria Larissa Teodoro', 'Universidade Federal do Ceará, Sobral, CE, Brasil', '', 2021, '01/01/2021', 'Promoção da Saúde, Saúde do Adolescente, Saúde Mental'),
+(2, 'Atenção a Saúde Mental no Município de Sobral - CE', 'Quinderé, Paulo Henrique Dias', ' Universidade Estadual do Ceará, Fortaleza, CE, Brasil', '', 2008, '01/01/2008', 'Assistência em Saúde Mental , Níveis de Atenção à Saúde , Prestação Integrada de Cuidados de Saúde');
 
 -- --------------------------------------------------------
 
@@ -167,10 +169,10 @@ CREATE TABLE `phdthesis` (
 --
 -- Extraindo dados da tabela `phdthesis`
 --
-
+-- Artigos Padronizados, apenas o primeiro foi Verificado
 INSERT INTO `phdthesis` (`idPhdthesis`, `Title`, `Authors`, `School`, `Year`, `Type`, `Data_Publicacao`, `Palavras_chave`) VALUES
-(1, 'EXPERIÊNCIAS DAS FAMÍLIAS COM USUÁRIOS ATENDIDOS NOS DISPOSITIVOS DE ATENÇÃO PSICOSSOCIAL', 'Barros, Márcia Maria Mont´Alverne', '', 2012, '', '09/12/2012', 'Família, Pesquisa qualitativa, Saúde Mental'),
-(2, 'TRABALHO E SAÚDE MENTAL EM PROFISSIONAIS DA ATENÇÃO BÁSICA: A  EXPERIÊNCIA DE SOBRAL, CEARÁ.', 'Farias, Mariana Ramalho', ' Universidade Estadual do Ceará, Fortaleza, CE, Brasil', 2015, '', '01/01/2015', 'Atenção Primária à Saúde, Saúde do Trabalhador, Saúde Mental');
+(1, 'Experiências das Famílias com Usuários Atendidos nos Dispositivos de Atenção Psicossocial', 'Barros, Márcia Maria Mont´Alverne', '', 2012, '', '09/12/2012', 'Família, Pesquisa Qualitativa, Saúde Mental'),
+(2, 'Trabalho e Saúde Mental em Profissionais da Atenção Básica: A Experiência de Sobral, Ceará.', 'Farias, Mariana Ramalho', ' Universidade Estadual do Ceará, Fortaleza, CE, Brasil', 2015, '', '01/01/2015', 'Atenção Primária à Saúde, Saúde do Trabalhador, Saúde Mental');
 
 --
 -- Indexes for dumped tables
