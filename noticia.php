@@ -32,7 +32,7 @@
         <div class="image">
           <img src="./assets/noticias/<?php print_r($Foto) ?>" alt="" loading="lazy">
         </div>
-        <p class="paragrafo-noticia"><?php print_r(utf8_encode($Texto)) ?> </p>
+        <?php print_r(utf8_encode($Texto)) ?>
         <div class="voltar">
             <a href="./ListaNoticias.php">
             <button class="button-back">

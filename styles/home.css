@@ -257,7 +257,7 @@ body {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 700px) {
   .slider-content .preview, .slider-content .next {
     height: 35px;
     width: 35px;
