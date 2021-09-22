@@ -271,7 +271,7 @@ main .container .pagination .numbers div, main .container .pagination .prev, mai
   background: var(--purple);
   border: 1px solid var(--purple);
   border-radius: 50%;
-  color: var(--text-white);
+  color: white;
   cursor: pointer;
   display: flex;
   height: 25px;
@@ -504,7 +504,7 @@ main .container .pagination .numbers .active:hover {
     background: var(--purple);
     border: 1px solid var(--purple);
     border-radius: 50%;
-    color: var(--text-white);
+    color: white;
     cursor: pointer;
     display: flex;
     height: 25px;

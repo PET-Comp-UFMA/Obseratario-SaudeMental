@@ -93,7 +93,7 @@ body {
   background: var(--purple);
   border: 1px solid var(--purple);
   border-radius: 50%;
-  color: var(--text-white);
+  color: white;
   cursor: pointer;
   display: flex;
   height: 25px;
