@@ -78,7 +78,7 @@ body {
 .texto-banner .intro-noticia h3 {
   font-size: 32px;
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
 }
 
 .texto-banner .intro-noticia p {
@@ -86,7 +86,7 @@ body {
   margin: 20px auto;
   margin-bottom: 50px;
   text-align: center;
-  width: 600px;
+  width: 100%;
 }
 
 .texto-banner .intro-noticia a {
@@ -151,7 +151,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 10vw);
   grid-gap: 2rem; 
-  width: 650px;
+  width: 100%;
 }
 
 .gallery__img {
@@ -196,13 +196,13 @@ body {
 .resumo-dexters .text-dexters h1 {
   color: var(--text-gray-secondary);
   font-size: 48px;
-  width: 300px;
+  text-align: center;
 }
 .resumo-dexters .text-dexters p {
   color: var(--text-gray);
   line-height: 22px;
   margin: 20px 0;
-  width: 350px;
+  text-align: justify;
 }
 
 .resumo-dexters .text-dexters a {
@@ -276,7 +276,6 @@ body {
 
   .texto-banner .intro-noticia p {
     font-size: 14px;
-    margin-top: 6px;
     margin-bottom: 10px;
     width: 80%;
   }
@@ -327,8 +326,10 @@ body {
   .resumo-dexters .text-dexters p{
     font-size: 14px;
     padding: 0;
-    width: 45em;
     text-align: justify;
   }
 
+  footer .infos div p{
+    font-size: 12px;
+  }
 }

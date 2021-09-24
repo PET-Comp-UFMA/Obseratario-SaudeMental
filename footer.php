@@ -8,7 +8,10 @@
   </div>
   <div class="infos">
     <h4>Contatos</h4>
-      <div><img src="./assets/svg/email icon.svg" alt="Ícone email" loading="lazy"><p>observatoriodesaudemental@gmail.com</p></div>
+    <div>
+        <img src="./assets/svg/email icon.svg" alt="Ícone email" loading="lazy">
+        <p>observatoriodesaudemental@gmail.com</p>
+    </div>
     <div class="contatos">
       <a class="contato" href="./contato.php">
         <img src="./assets/svg/comment icon.svg" alt="Ícone comentário" loading="lazy">Fale Conosco

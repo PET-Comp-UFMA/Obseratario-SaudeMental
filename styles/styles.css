@@ -218,13 +218,14 @@ footer .infos > div {
   justify-content: center;
   display: flex;
   padding: 12px 0px;
+  margin: 0px 0px;
 }
 
 footer .infos div p {
-  font-size: 14px;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 footer .infos img {
@@ -234,7 +235,6 @@ footer .infos img {
 footer .infos a,
 footer .infos p {
   color: var(--text-white);
-  margin-left: 20px;
 }
 
 footer .infos .btn-contato {
@@ -479,6 +479,10 @@ footer .contato a {
     margin-left: 6px;
     width: fit-content;
   }
+
+  footer .infos p {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1051px) {
@@ -499,13 +503,12 @@ footer .contato a {
 
   footer h4 {
     color: #919496;
-    text-align: start;
     width: 100%;
     background: none;
     padding-top: 1rem;
-    text-indent: 2px;
     margin-top: 1rem;
     border-bottom: 1px solid #919496;
+    text-align: center;
   }
 
   footer .logos-footer {
@@ -538,6 +541,7 @@ footer .contato a {
   }
 
   footer .infos li p {
+    margin-left: 0px;
     font-size: 12px;
   }
 
@@ -551,5 +555,16 @@ footer .contato a {
 
   footer .contatos .contato {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 700px){
+  .text-dexters {
+    width: 40%;
+    text-align: justify;
+  }
+
+  footer .infos div p{
+    font-size: 14px;
   }
 }
