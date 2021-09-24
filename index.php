@@ -32,8 +32,9 @@
           background-size: 100% 100%, cover">
             <div class="intro-noticia">
               <h3>Observatório Saúde Mental e Políticas sobre Drogas</h3>
-              <p>Captação de obras na área de saúde mental e políticas sobre drogas no município de Sobral-CE</p>
-              <a href="./sobre.php">Conheça</a>
+              <p>
+                <a href="./sobre.php">Conheça</a>
+              </p>
             </div>
           </div>
         </li>
