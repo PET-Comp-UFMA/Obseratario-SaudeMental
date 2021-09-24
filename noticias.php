@@ -26,7 +26,12 @@
         <!-- INICIO --> 
         <li class="item">
         <div class="card">
-          <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="" loading="lazy">
+        <?php if (!empty($row['Foto'])) : ?>
+            <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="" loading="lazy">
+            <?php else : ?>
+              <p></p>
+            <?php endif ?>
+          
           <div class="details">
             <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
             
