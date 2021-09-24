@@ -560,11 +560,26 @@ footer .contato a {
 
 @media (min-width: 700px){
   .text-dexters {
-    width: 40%;
-    text-align: justify;
+    width: 100%;
   }
 
   footer .infos div p{
     font-size: 14px;
+  }
+}
+
+@media (max-width: 281px){
+  footer .infos p {
+      font-size: 11px;
+  }
+}
+
+@media (max-width: 280px){
+  footer .logos-footer a img {
+    border: 3px solid var(--black-footer);
+    border-top: 1px solid var(--black-footer);
+    border-left: 1px solid var(--black-footer);
+    padding: 2px;
+    width: 120px;
   }
 }
