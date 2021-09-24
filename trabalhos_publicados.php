@@ -102,11 +102,20 @@
           <div class="share">
             <p class="type">Compartilhe</p>
             <div class="links ">
+              <?php
+                $baseUrl = str_replace("trabalhos_publicados.php", "", url());
+                $parametro = urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])));
+                $parametro = accent2ascii($parametro);
+                $url =  $baseUrl."busca.php?publication=".$parametro;
+              ?>
+              <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
+
+
+
               <?php 
                 $baseUrl = str_replace("trabalhos_publicados.php", "", url()); //removendo "trabalhos_publicados.php" do link de compartilhamento
                 $url = $baseUrl."busca.php?publication=".urlencode(utf8_encode($row['Titulo']))."&author=". urlencode(utf8_encode($row['Autor']));
               ?>
-              <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a target="_blank" href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
             </div>
