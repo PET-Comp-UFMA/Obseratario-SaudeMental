@@ -29,8 +29,15 @@
           <img src="./assets/noticias/<?php print_r(utf8_encode($row['Foto']))?>" alt="" loading="lazy">
           <div class="details">
             <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
-            <p>Description: <?php print_r(utf8_encode($row['Descricao'])) ?></p>
-            <a href="<?php print_r(str_replace(' ', '+', utf8_encode($row['Titulo'])))?>-<?php print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>
+            
+            <?php if (!empty($row['Descricao'])) : ?>
+              <p>Descrição: <?php print_r(utf8_encode($row['Descricao'])) ?></p>
+            <?php else : ?>
+              <p></p>
+            <?php endif ?>
+
+            <!--<a href="<?php //print_r(str_replace(' ', '+', urlencode(utf8_encode($row['Titulo']))))?>-<?php //print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>-->
+            <a href="ListaNoticias.php?Noticia=<?php print_r(str_replace(' ', '+', urlencode(utf8_encode($row['Titulo']))))?>&idNoticia=<?php print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>
           </div>
         </div>
         <div class="line-gray"></div>
