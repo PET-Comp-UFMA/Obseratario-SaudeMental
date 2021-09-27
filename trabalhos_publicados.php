@@ -1,6 +1,6 @@
 <?php
     require_once('conexao.php');   
-    require_once('scripts.php/utils.php');
+    require('scripts.php/utils.php');
 ?>
 
 <!DOCTYPE html>
@@ -103,9 +103,10 @@
             <p class="type">Compartilhe</p>
             <div class="links ">
               <?php
-                $baseUrl = str_replace("trabalhos_publicados.php", "", url());
-                $parametro = urlencode(str_replace(" ", "+", utf8_encode($row['Titulo'])));
-                $parametro = accent2ascii($parametro);
+                $baseUrl = url();
+                $parametro = strtr(utf8_encode($row['Titulo']), $caracteres_sem_acento);
+                $parametro = substr_replace($parametro ,'',-1); //removendo o ultimo ' ' que vem do bd e gera erro no link 
+                $parametro = urlencode((str_replace(" ", "+", $parametro)));
                 $url =  $baseUrl."busca.php?publication=".$parametro;
               ?>
               <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $url?>" id="twitter-share-btt" rel="nofollow" target="_blank"><img src="./assets/svg/twitter_icon_copy.svg" alt=""></a>
@@ -118,6 +119,7 @@
               ?>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
               <a target="_blank" href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
+
             </div>
           </div>
           <div class="authors">
