@@ -1,4 +1,3 @@
-
 body {
   background-color: var(--bg);
 }
@@ -10,13 +9,15 @@ body {
   width: 100%;
 }
 
-.slider-content .preview span, .slider-content .next span {
-  color: var(--text-white);
+.slider-content .preview span,
+.slider-content .next span {
+  color: #fff;
   font-size: 26px;
   font-weight: 100;
 }
 
-.slider-content .preview, .slider-content .next {
+.slider-content .preview,
+.slider-content .next {
   align-items: center;
   background: none;
   border: 1px solid #fff;
@@ -31,7 +32,7 @@ body {
   position: absolute;
   text-decoration: none;
   top: 50%;
-  transition: .6s ease;
+  transition: 0.6s ease;
   width: 50px;
 }
 
@@ -39,11 +40,13 @@ body {
   right: 0;
 }
 
-.slider-content .preview img, .slider-content .next img {
+.slider-content .preview img,
+.slider-content .next img {
   width: 30px;
 }
 
-.slider-content .preview:hover, .slider-content .next:hover {
+.slider-content .preview:hover,
+.slider-content .next:hover {
   background: var(--purple);
   border: 1px solid var(--purple);
 }
@@ -57,7 +60,7 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 600px;
   justify-content: center;
   margin: 0;
   text-align: center;
@@ -97,7 +100,7 @@ body {
   margin: 0 auto;
   padding: 14px;
   text-decoration: none;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   width: fit-content;
 }
 
@@ -123,17 +126,18 @@ body {
   cursor: pointer;
   height: 15px;
   margin: 0 5px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   width: 15px;
 }
 
-.active, .dot:hover { 
+.active,
+.dot:hover {
   background: var(--purple);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #sobre {
-  background: #EEEEEE;
+  background: #eeeeee;
   height: 100%;
   width: 100%;
 }
@@ -151,7 +155,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 10vw);
-  grid-gap: 2rem; 
+  grid-gap: 2rem;
   width: 650px;
 }
 
@@ -159,7 +163,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; 
+  display: block;
 }
 
 .gallery__item--1 {
@@ -212,12 +216,12 @@ body {
 }
 
 .resumo-dexters .text-dexters a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .resumo-dexters .images figure {
   box-shadow: 0px 15px 10px 4px #d4d4d4;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .resumo-dexters .images figure:hover {
@@ -227,19 +231,33 @@ body {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .6}
-  to {opacity: 1}
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .6}
-  to {opacity: 1}
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1500px) {
+  .texto-banner {
+    height: 400px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -252,14 +270,18 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+}
+
+/* @media (max-width: 768px) {
   .texto-banner {
     height: 500px;
   }
-}
+} */
 
 @media (max-width: 700px) {
-  .slider-content .preview, .slider-content .next {
+  .slider-content .preview,
+  .slider-content .next {
     height: 35px;
     width: 35px;
   }
@@ -289,7 +311,7 @@ body {
     margin: 0 auto;
     padding: 14px;
     text-decoration: none;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     width: fit-content;
   }
 
@@ -299,7 +321,7 @@ body {
     cursor: pointer;
     height: 10px;
     margin: 0 5px;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     width: 10px;
   }
 
@@ -324,23 +346,22 @@ body {
     margin-bottom: 0;
   }
 
-  .resumo-dexters .text-dexters p{
+  .resumo-dexters .text-dexters p {
     font-size: 14px;
     padding: 0;
     text-align: justify;
   }
-
 }
 
-@media (max-width: 280px){
-    .resumo-dexters .text-dexters p{
+@media (max-width: 280px) {
+  .resumo-dexters .text-dexters p {
     font-size: 14px;
     padding: 0;
     width: 15em;
     text-align: justify;
   }
 
-    .resumo-dexters .text-dexters h1 {
+  .resumo-dexters .text-dexters h1 {
     font-size: 25px;
     margin-top: 30px;
     margin-left: auto;
@@ -349,8 +370,7 @@ body {
     width: 100%;
   }
 
-  .resumo-dexters .text-dexters{
+  .resumo-dexters .text-dexters {
     width: 280px;
   }
-
 }
