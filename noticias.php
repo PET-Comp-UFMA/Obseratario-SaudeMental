@@ -33,7 +33,7 @@
             <?php endif ?>
           
           <div class="details">
-            <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
+            <h1><?php print_r(utf8_encode($row['Titulo'])) ?></h1>
             
             <?php if (!empty($row['Descricao'])) : ?>
               <p>Descrição: <?php print_r(utf8_encode($row['Descricao'])) ?></p>

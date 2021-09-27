@@ -11,7 +11,7 @@ html {
   --bg-secondary: #fdfdfd;
   --bg-black-secondary: #333;
   --purple: #3d3d79;
-  --text-white: rgb(70, 55, 55);
+  --text-white: #ffff;
   --text-gray: #8d8d8d;
   --text-gray-secondary: #535353;
   --gray-border: #72728e;
@@ -234,7 +234,7 @@ footer .infos img {
 
 footer .infos a,
 footer .infos p {
-  color: var(--text-white);
+  color: var(--purple);
 }
 
 footer .infos .btn-contato {

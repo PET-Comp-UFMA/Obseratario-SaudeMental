@@ -52,7 +52,6 @@
           <div class="texto-banner" style="background-image: url(./assets/noticias/<?php print_r(utf8_encode($row['Foto'])) ?>);background-size: cover">
             <div class="intro-noticia">
               <h3><?php print_r(utf8_encode($row['Titulo'])) ?></h3>
-              <p><?php print_r(utf8_encode($row['Descricao'])) ?> </p>
               <a href="./ListaNoticias.php?Noticia=<?php print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>
             </div>
           </div>
