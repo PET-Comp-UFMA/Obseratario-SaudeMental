@@ -357,13 +357,12 @@ footer .contato a {
     margin: 0;
   }
 
-  header .logos .ufma-logo,
-  header .divider {
-    display: none;
+  header .logos a .observatorio-logo {
+    width: 70%;
   }
 
-  header .logos a .observatorio-logo {
-    width: 60%;
+  header .logos .ufma-logo {
+    width: 400%;
   }
 
   header .open-btn,
@@ -558,23 +557,23 @@ footer .contato a {
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
   .text-dexters {
     width: 100%;
   }
 
-  footer .infos div p{
+  footer .infos div p {
     font-size: 14px;
   }
 }
 
-@media (max-width: 281px){
+@media (max-width: 281px) {
   footer .infos p {
-      font-size: 11px;
+    font-size: 11px;
   }
 }
 
-@media (max-width: 280px){
+@media (max-width: 280px) {
   footer .logos-footer a img {
     border: 3px solid var(--black-footer);
     border-top: 1px solid var(--black-footer);
