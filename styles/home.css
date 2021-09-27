@@ -90,7 +90,6 @@ body {
   margin-bottom: 50px;
   text-align: center;
   width: 600px;
-  margin-top: 5vh;
 }
 
 .texto-banner .intro-noticia a {
@@ -102,6 +101,7 @@ body {
   text-decoration: none;
   transition: 0.2s ease-in-out;
   width: fit-content;
+  margin-top: 4vh;  
 }
 
 .texto-banner a:hover {
@@ -201,7 +201,7 @@ body {
 .resumo-dexters .text-dexters h1 {
   color: var(--text-gray-secondary);
   font-size: 48px;
-  width: 300px;
+  width: 100%;
 }
 .resumo-dexters .text-dexters p {
   color: var(--text-gray);
@@ -303,17 +303,6 @@ body {
     width: 100%;
   }
 
-  .texto-banner .intro-noticia a {
-    background: var(--bg);
-    border-radius: 50px;
-    color: var(--purple);
-    font-size: 14px;
-    margin: 0 auto;
-    padding: 14px;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-    width: fit-content;
-  }
 
   .dot {
     background: var(--bg);
@@ -329,7 +318,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 30px;
+    padding: 20px;
   }
 
   .resumo-dexters .images {
@@ -357,7 +346,7 @@ body {
   .resumo-dexters .text-dexters p {
     font-size: 14px;
     padding: 0;
-    width: 15em;
+    width: 100%;
     text-align: justify;
   }
 
@@ -371,6 +360,14 @@ body {
   }
 
   .resumo-dexters .text-dexters {
-    width: 280px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+ .texto-banner .intro-noticia p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 90%;
   }
 }
