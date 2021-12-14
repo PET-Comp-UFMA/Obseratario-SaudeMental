@@ -210,22 +210,13 @@ footer h4 {
   padding: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: var(--text-white);
+  color: var(--text-gray-secondary);
 }
 
 footer .infos > div {
   align-items: center;
   justify-content: center;
   display: flex;
-  padding: 12px 0px;
-  margin: 0px 0px;
-}
-
-footer .infos div p {
-  margin: 0;
-  margin-left: 5px;
-  margin-bottom: 0;
-  width: 100%;
 }
 
 footer .infos img {
@@ -235,6 +226,10 @@ footer .infos img {
 footer .infos a,
 footer .infos p {
   color: var(--purple);
+  margin: 0;
+  margin-bottom: 0;
+  width: 100%;
+  margin-left: 20px;
 }
 
 footer .infos .btn-contato {
@@ -244,6 +239,17 @@ footer .infos .btn-contato {
 
 footer .infos a {
   text-decoration: none;
+}
+
+footer .infos ul {
+  list-style: none;
+}
+
+footer .infos ul li {
+  align-items: center;
+  display: flex;
+  padding: 0;
+  width: 300px;
 }
 
 footer .contatos {
@@ -468,11 +474,8 @@ footer .contato a {
     width: 100%;
   }
 
-  footer .infos li {
-    margin-left: 0px;
-  }
-
-  footer .infos li p {
+  footer .infos li p,
+  footer .infos li a {
     font-size: 14px;
     margin: 0;
     margin-left: 6px;
@@ -501,7 +504,7 @@ footer .contato a {
   }
 
   footer h4 {
-    color: #919496;
+    color: var(--text-gray-secondary);
     width: 100%;
     background: none;
     padding-top: 1rem;
@@ -539,8 +542,12 @@ footer .contato a {
     width: 20px;
   }
 
-  footer .infos li p {
-    margin-left: 0px;
+  footer .infos li p,
+  footer .infos li a {
+    margin: 0;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 13px;
     font-size: 12px;
   }
 
