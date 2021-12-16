@@ -1,4 +1,3 @@
-
 body {
   background-color: var(--bg);
 }
@@ -25,7 +24,6 @@ main .container .noticia-especifica {
   width: 100%;
 }
 
-
 main .container .noticia-especifica h1.titulo-noticia {
   font-size: 42px;
   font-weight: 600;
@@ -37,15 +35,63 @@ main .container .noticia-especifica h1.titulo-noticia {
 
 main .container .noticia-especifica .image {
   display: flex;
+  flex-direction: column;
+  float: left;
   margin: 0 auto;
 }
 
-main .container .noticia-especifica .image img{
+main .container .noticia-especifica .image img {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
+main .container .noticia-especifica .image .share {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 15%;
+}
+
+main .container .noticia-especifica .image .share .type {
+  text-align: center;
+}
+
+main .container .noticia-especifica .image .authors {
+  width: 35%;
+}
+
+main .container .noticia-especifica .image .data-name,
+main .container .noticia-especifica .image .share,
+main .container .noticia-especifica .image .authors,
+main .container .noticia-especifica .image .resume {
+  display: flex;
+  flex-direction: column;
+}
+
+main .container .noticia-especifica .image .share .links {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+main .container .noticia-especifica .image .share a img {
+  height: 20px;
+  width: 20px;
+}
+
+main .container .noticia-especifica .image .share p,
+main .container .noticia-especifica .image .authors p {
+  font-size: calc((12px + 0.25vw) * 0.875);
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 6px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
 main .container .noticia-especifica p.paragrafo-noticia {
   color: var(--text-gray);
@@ -71,7 +117,7 @@ main .container .button-back {
   font-weight: 500;
   text-decoration: none;
   padding: 12px;
-  transition: .1s ease-out;
+  transition: 0.1s ease-out;
   width: fit-content;
 }
 
@@ -106,5 +152,4 @@ main .voltar {
   main .container .noticia-especifica p.paragrafo-noticia {
     font-size: 16px;
   }
-  
 }
