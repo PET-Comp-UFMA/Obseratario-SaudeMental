@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatório Saúde Mental</title>
 
-  <link rel="icon" href="./assets/images/LogoObservatorio2.png">
+  <link rel="icon" href="./assets/images/logo-observatorio-sem-texto.png">
   
   <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -25,7 +25,7 @@
     include('header.php');
   ?>
   <main>
-    <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+    <div class="section-header">
       <h2>Trabalhos Publicados</h2>
     </div>
 
@@ -68,11 +68,11 @@
         </button>
       </div>
     </form>
-      <!-- START  -->
+
       
     <section id="paginate">
     <div class="line-purple"></div>
-    <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
+    <ul class="list" style="list-style: none;">  
        <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
@@ -85,7 +85,7 @@
                     $row = mysqli_fetch_array($result);
         ?>
 
-        <!-- inicio -->
+
       <li class="item">
       <div class="card">
         <div class="details">
@@ -105,7 +105,7 @@
               <?php
                 $baseUrl = url();
                 $parametro = strtr(utf8_encode($row['Titulo']), $caracteres_sem_acento);
-                $parametro = substr_replace($parametro ,'',-1); //removendo o ultimo ' ' que vem do bd e gera erro no link 
+                $parametro = substr_replace($parametro ,'',-1); 
                 $parametro = urlencode((str_replace(" ", "+", $parametro)));
                 $url =  $baseUrl."busca.php?publication=".$parametro;
               ?>
@@ -114,11 +114,11 @@
 
 
               <?php 
-                $baseUrl = str_replace("trabalhos_publicados.php", "", url()); //removendo "trabalhos_publicados.php" do link de compartilhamento
+                $baseUrl = str_replace("trabalhos_publicados.php", "", url());
                 $url = $baseUrl."busca.php?publication=".urlencode(utf8_encode($row['Titulo']))."&author=". urlencode(utf8_encode($row['Autor']));
               ?>
               <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a target="_blank" href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
+              <a href="whatsapp://send?text=<?php echo 'Acesse: - '.$url?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
 
             </div>
           </div>
@@ -164,18 +164,14 @@
             <p class="data">Data de publicação: <span class="data-day"><?php print_r(utf8_encode($row['Data']))?></span></p>
           </div>
         </div>
-        
-        <!-- </div> -->
-        
         <div class="line-gray"></div>
-        <!-- fim -->
         <?php
         }
       ?>
         </ul>
       </section>
 
-      <div class="pagination"> <!-- botões -->
+      <div class="pagination"> 
         <div class="prev">
           <span class="material-icons">
             navigate_before

@@ -2,14 +2,14 @@
     require_once('conexao.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatório Saúde Mental</title>
   
-  <link rel="icon" href="./assets/images/logo-observaorio-sem-texto.png">
+  <link rel="icon" href="./assets/images/logo-observatorio-sem-texto.png">
 
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -84,20 +84,16 @@
       <div class="resumo-dexters">
         <div class="images">
           <figure class="gallery__item gallery__item--1">
-            <img src="./assets/images/photo-8.jpg" alt="Gallery image 1" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-5.jpg" alt="Gallery image 1" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--2">
-            <img src="./assets/images/photo-6.jpg" alt="Gallery image 2" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-2.jpg" alt="Gallery image 2" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--3">
-            <img src="./assets/images/photo-9.jpg" alt="Gallery image 3" loading="lazy" class="gallery__img">
+            <img src="./assets/images/photo-4.jpg" alt="Gallery image 3" loading="lazy" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--4">
-            <img src="./assets/images/photo-7.jpg" alt="Gallery image 4" loading="lazy" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--5">
-            <img src="./assets/images/photo-10.jpg" alt="Gallery image 4" loading="lazy" class="gallery__img"> 
-          </figure>
+            <img src="./assets/images/photo-1.jpg" alt="Gallery image 4" loading="lazy" class="gallery__img">
         </div>
         <div class="text-dexters">
           <h1>Conheça o <mark class="highlight">Observatório</mark></h1>

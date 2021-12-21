@@ -45,5 +45,5 @@ use PHPMailer\PHPMailer\Exception;
 	$assunto = $_POST['assunto'];
 
 	$corpo_email = "<h3>Nome: $nome </h3> <p>Email: $email </p> <p>Telefone: $telefone </p> <p>Assunto: $assunto </p>  <p>Mensagem:</p> $mensagem";
-	email("petcomputacao.ufma@gmail.com", "Observatório de Saúde Mental", $assunto, $corpo_email);
+	email("observatoriodesaudemental@gmail.com", "Observatório de Saúde Mental", $assunto, $corpo_email);
 ?>

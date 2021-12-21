@@ -34,14 +34,30 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:title" content="<?php echo $pesquisa ?>">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="http://observatoriodesaudemental.com.br/assets/images/photo-5.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500"> 
+  <meta property="og:site_name" content="Observatório de Saúde Mental">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<?php echo $pesquisa ?>" />
+  <meta name="twitter:description" content="Trabalho publicado no Observatório de Saúde Mental." />
+  <meta name="twitter:site" content="@OBSERVATRIODES1" />
+  <meta name="twitter:image" content="http://observatoriodesaudemental.com.br/assets/images/photo-5.jpg" />
+  <meta name="twitter:creator" content="@OBSERVATRIODES1" />   
+  
   <title>Observatório Saúde Mental</title>
 
-  <link rel="icon" href="./assets/images/LogoObservatorio2.png">
+  <link rel="icon" href="./assets/images/logo-observatorio-sem-texto.png">
   
   <link rel="stylesheet" href="./styles/trabalhos_publicados.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -56,7 +72,7 @@
   ?>
 
 <main>
-    <div class="section-header"> <!-- para mudar a cor é so acessar essa clase em style.css -->
+    <div class="section-header"> 
       <h2>Trabalhos Publicados</h2>
     </div>
     
@@ -95,10 +111,9 @@
         <button name="search-button" class="search-button"><img src="./assets/svg/search.svg" alt=""></button>
       </div>
     </form>
-      <!-- START  -->
-      
+    
     <section id="paginate">
-    <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
+    <ul class="list" style="list-style: none;"> 
        <?php
             mysqli_select_db($mysqli, $bd) or die("Could not select database");
 
@@ -117,7 +132,6 @@
       <div class="card">
         <div class="details">
           <div class="data-name">
-                <!--  -->
             <h5 class="article-name">
             <?php print_r(utf8_encode($row['Titulo']))?>
             </h5>
@@ -132,7 +146,7 @@
             <?php
                 $baseUrl = url();
                 $parametro = strtr(utf8_encode($row['Titulo']), $caracteres_sem_acento);
-                $parametro = substr_replace($parametro ,'',-1); //removendo o ultimo ' ' que vem do bd e gera erro no link 
+                $parametro = substr_replace($parametro ,'',-1);
                 $parametro = urlencode((str_replace(" ", "+", $parametro)));
                 $url =  $baseUrl."busca.php?publication=".$parametro;
               ?>
@@ -140,13 +154,12 @@
 
 
 
-              <?php 
-                $baseUrl = substr(url(), 0, strpos(url(), "?")); //removendo argumentos do post, tudo depois de "?"
-                $baseUrl = str_replace("busca.php", "", $baseUrl); //removendo "busca.php" do link de compartilhamento
-                $url =  $baseUrl."busca.php?publication=".urlencode(utf8_encode($row['Titulo']))."&author=". urlencode(utf8_encode($row['Autor']));
+              <?php
+                $urlFace = "https://www.facebook.com/sharer.php?u=".$url.urlencode(utf8_encode($row['Titulo']));
               ?>
-              <a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo $url?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
-              <a href="whatsapp://send?text=<?php echo urlencode('Acesse: - '.$url)?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
+              <a target="_blank" href="<?php echo $urlFace?>"><img src="./assets/svg/facebook_icon_copy.svg" alt=""></a>
+              
+              <a href="whatsapp://send?text=<?php echo 'Acesse: - '.$url?>"><img src="./assets/svg/whatsapp.svg" alt=""></a> 
             </div>
           </div>
           <div class="authors">
@@ -171,8 +184,6 @@
             </ul>
           </div>	
         </div>
-      
-        <!-- <div class="buttons-container" style="display: flex; justify-content: flex-start;"> -->
         
         <div class="card-bottom">
 
@@ -196,17 +207,14 @@
           </div>
         </div>
         
-        <!-- </div> -->
-        
         <div class="line-gray"></div>
-        <!-- fim -->
       <?php
         }
       ?>
         </ul>
-      </section> <!--END section id="paginate"-->
+      </section> 
 
-      <div class="pagination"> <!-- botões -->
+      <div class="pagination">
         <div class="prev">
           <span class="material-icons">
             navigate_before
@@ -230,10 +238,9 @@
           </div>
         </li>
         <?php } ?>
-    </section> <!--END section class="container"-->
+    </section> 
   </main>
 
-    
   <?php 
     include('footer.php');
   ?>
@@ -241,26 +248,6 @@
   <script src="./scripts/trab_publicados.js"></script>
   <script src="./scripts/tag_display.js"></script>
   <script src="./scripts/pagination.js"></script>
-
-  <script type="text/javascript">
-   function cite(str) {
-    // Create new element
-   var el = document.createElement('textarea');
-   // Set value (string to be copied)
-   el.value = str;
-   // Set non-editable to avoid focus and move outside of view
-   el.setAttribute('readonly', '');
-   el.style = {position: 'absolute', left: '-9999px'};
-   document.body.appendChild(el);
-   // Select text inside element
-   el.select();
-   // Copy text to clipboard
-   document.execCommand('copy');
-   // Remove temporary element
-   document.body.removeChild(el);
-   alert('Citação copiada para área de transferêcia');
-}
-  </script>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
 
-    $hostname="localhost";
-    $bd="observatorio_db";
-    $usuario="root";
-    $senha="";
+    $hostname="observatoriodesaudemental.com.br";
+    $bd="bd_placeholder";
+    $usuario="user_placeholder";
+    $senha="pass_placeholder";
 
     $mysqli = new mysqli($hostname, $usuario, $senha, $bd);
 

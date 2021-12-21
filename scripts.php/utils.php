@@ -1,19 +1,9 @@
 <?php 
-
-/*function url(){
-  return sprintf(
-    "%s://%s%s",
-    isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-    $_SERVER['SERVER_NAME'],
-    $_SERVER['REQUEST_URI']
-  );
-}
-*/
 function url(){
-  return 'http://observatoriodesaudemental.com.br/v2/Observatorio-SaudeMental/';
+  return 'http://observatoriodesaudemental.com.br/';
 }
 
-/**
+/*
  * Converts accentuated characters (àéïöû etc.) 
  * to their ASCII equivalent (aeiou etc.)
  *
@@ -21,6 +11,7 @@ function url(){
  * @param  string $charset
  * @return string
  */
+
 function accent2ascii(string $str, string $charset = 'utf-8'): string
 {
     $str = htmlentities($str, ENT_NOQUOTES, $charset);

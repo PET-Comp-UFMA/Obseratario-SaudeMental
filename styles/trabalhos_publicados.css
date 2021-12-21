@@ -25,7 +25,7 @@ main .container .filtro .author label,
 main .container .filtro .keyword label,
 main .container .filtro .type label,
 main .container .search label {
-  font-size: calc((12px + 0.25vw) * 0.875);
+  font-size: calc((12px + .25vw) * .875);
   font-weight: 700;
   letter-spacing: 4px;
   margin: 10px 0;
@@ -65,13 +65,13 @@ main .container .search-button {
   height: 50px;
   margin: auto 0;
   padding: 12px;
-  transition: 0.2s ease-in-out;
+  transition: .2s ease-in-out;
   width: 50px;
 }
 
 main .container .search-button:hover,
 main .container .search-button:focus {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 main .container .list,
@@ -114,9 +114,9 @@ main .container .card .details .share {
   width: 15%;
 }
 
-main .container .card .details .share .type {
+main .container .card .details .share .type{
   text-align: center;
-}
+} 
 
 main .container .card .details .authors {
   width: 35%;
@@ -130,7 +130,7 @@ main .container .card .details .resume {
   flex-direction: column;
 }
 
-main .container .card .details .share .links {
+main .container .card .details .share .links{
   width: 90%;
   text-align: center;
   margin-left: auto;
@@ -139,7 +139,7 @@ main .container .card .details .share .links {
   justify-content: space-around;
 }
 
-main .container .card .pub-type {
+main .container .card .pub-type{
   font-size: 14px;
   margin-top: 20px;
 }
@@ -150,7 +150,7 @@ main .container .card .pub-type .pub-type-cont {
   margin-left: 4px;
 }
 
-main .container .card .panel .tags .list-tags {
+main .container .card .panel .tags .list-tags{
   display: flex;
   flex-direction: row;
 }
@@ -167,13 +167,14 @@ main .container .card .panel .resume {
 main .container .card .details .share p,
 main .container .card .details .authors p,
 main .container .card .panel .resume .resume-title,
-main .container .card .panel .tags-title {
-  font-size: calc((12px + 0.25vw) * 0.875);
+main .container .card .panel .tags-title{
+  font-size: calc((12px + .25vw) * .875);
   font-weight: 700;
   letter-spacing: 4px;
   margin: 6px 0;
   margin-bottom: 20px;
   text-transform: uppercase;
+
 }
 
 main .container .card .details .data-name .article-name {
@@ -220,7 +221,7 @@ main .container .card .button-download {
   margin: 10px 15px 10px 0;
   text-decoration: none;
   padding: 12px;
-  transition: 0.1s ease-out;
+  transition: .1s ease-out;
   width: fit-content;
 }
 
@@ -236,21 +237,21 @@ main .container .card .button-download span {
   font-weight: 400;
 }
 
-main .container .authors {
+main .container .authors{
   padding: 0px 15px;
 }
 
-main .container .card .card-bottom {
+main .container .card .card-bottom{
   flex-direction: column;
   display: flex;
   justify-content: flex-end;
 }
 
-main .container .card .card-bottom .data {
+main .container .card .card-bottom .data{
   margin: 0;
   font-size: 14px;
 }
-main .container .card .card-bottom .data .data-day {
+main .container .card .card-bottom .data .data-day{
   font-weight: 500;
 }
 
@@ -265,9 +266,7 @@ main .container .pagination .numbers {
   display: flex;
 }
 
-main .container .pagination .numbers div,
-main .container .pagination .prev,
-main .container .pagination .next {
+main .container .pagination .numbers div, main .container .pagination .prev, main .container .pagination .next {
   align-items: center;
   background: var(--purple);
   border: 1px solid var(--purple);
@@ -282,8 +281,7 @@ main .container .pagination .next {
   width: 25px;
 }
 
-main .container .pagination .prev:hover,
-main .container .pagination .next:hover {
+main .container .pagination .prev:hover , main .container .pagination .next:hover {
   background: var(--bg);
   color: var(--purple);
 }
@@ -303,14 +301,13 @@ main .container .pagination .numbers .active:hover {
 }
 
 .line-gray {
-  background: #9d9dc4;
+  background: #9D9DC4;
 }
 
-.line-purple,
-.line-gray {
+.line-purple, .line-gray {
   height: 1px;
   margin: 10px 0;
-  width: 100%;
+  width: 100%
 }
 
 .tag-zero {
@@ -318,6 +315,7 @@ main .container .pagination .numbers .active:hover {
 }
 
 @media screen and (max-width: 800px) {
+
   main .container {
     margin: 0 auto;
     width: 90%;
@@ -330,28 +328,28 @@ main .container .pagination .numbers .active:hover {
 
   main .container .filtro .publication,
   main .container .filtro .author,
-  main .container .filtro .keyword {
+  main .container .filtro .keyword{
     display: flex;
     flex-direction: column;
   }
-
-  main .container .card .details .share {
+  
+  main .container .card .details .share{
     padding: 10px 0 0 0;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
   }
 
-  main .container .card .details .share .type {
+  main .container .card .details .share .type{
     display: inline;
     text-align: left;
-  }
+  } 
 
-  main .container .card .details .share .links {
+  main .container .card .details .share .links{
     width: 40%;
   }
 
-  main .container .card .details .authors {
+  main .container .card .details .authors{
     padding: 0;
   }
 
@@ -364,7 +362,7 @@ main .container .pagination .numbers .active:hover {
   main .container .filtro .keyword label,
   main .container .filtro .type label,
   main .container .search label {
-    font-size: calc((12px + 0.25vw) * 0.875);
+    font-size: calc((12px + .25vw) * .875);
     font-weight: 700;
     letter-spacing: 4px;
     margin: 10px 0;
@@ -403,13 +401,13 @@ main .container .pagination .numbers .active:hover {
     height: 50px;
     margin: auto 0;
     padding: 12px;
-    transition: 0.2s ease-in-out;
+    transition: .2s ease-in-out;
     width: 50px;
   }
 
   main .container .search-button:hover,
   main .container .search-button:focus {
-    opacity: 0.6;
+    opacity: .6;
   }
 
   main .container .list,
@@ -448,7 +446,7 @@ main .container .pagination .numbers .active:hover {
   main .container .card .details .authors p,
   main .container .card .panel .resume .resume-title,
   main .container .card .panel .tags-title {
-    font-size: calc((12px + 0.25vw) * 0.875);
+    font-size: calc((12px + .25vw) * .875);
     font-weight: 700;
     letter-spacing: 4px;
     margin: 6px 0;
@@ -487,7 +485,7 @@ main .container .pagination .numbers .active:hover {
     margin: 10px 15px 10px 0;
     text-decoration: none;
     padding: 5px;
-    transition: 0.1s ease-out;
+    transition: .1s ease-out;
     width: 60%;
   }
 
@@ -501,9 +499,7 @@ main .container .pagination .numbers .active:hover {
     display: flex;
   }
 
-  main .container .pagination .numbers div,
-  main .container .pagination .prev,
-  main .container .pagination .next {
+  main .container .pagination .numbers div, main .container .pagination .prev, main .container .pagination .next {
     align-items: center;
     background: var(--purple);
     border: 1px solid var(--purple);
@@ -518,8 +514,7 @@ main .container .pagination .numbers .active:hover {
     width: 25px;
   }
 
-  main .container .pagination .prev:hover,
-  main .container .pagination .next:hover {
+  main .container .pagination .prev:hover , main .container .pagination .next:hover {
     background: var(--bg);
     color: var(--purple);
   }
@@ -532,14 +527,15 @@ main .container .pagination .numbers .active:hover {
 
 @media screen and (max-width: 430px) {
   main .container .card .details .share .links {
-    width: 90%;
-    text-align: center;
-    margin-left: 2vh;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
+  width: 90%;
+  text-align: center;
+  margin-left: 2vh;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
   }
   main .container .card .details .share .links a {
     margin: auto 2vh auto 2vh;
   }
-}
+
+} 

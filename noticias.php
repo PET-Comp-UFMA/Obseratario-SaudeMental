@@ -8,7 +8,7 @@
     </div>
 
     <section id="paginate">
-      <ul class="list" style="list-style: none;">  <!-- lista com cada li e cada li tem a box dentro-->
+      <ul class="list" style="list-style: none;"> 
         <div class="line-purple"></div>
           <?php
                 mysqli_select_db($mysqli, $bd) or die("Could not select database");
@@ -22,8 +22,6 @@
                         $row = mysqli_fetch_array($result);
             ?>
 
-
-        <!-- INICIO --> 
         <li class="item">
         <div class="card">
         <?php if (!empty($row['Foto'])) : ?>
@@ -33,7 +31,7 @@
             <?php endif ?>
           
           <div class="details">
-            <h1><?php print_r(utf8_encode($row['Titulo'])) ?></h1>
+            <h1>Título: <?php print_r(utf8_encode($row['Titulo'])) ?></h1>
             
             <?php if (!empty($row['Descricao'])) : ?>
               <p>Descrição: <?php print_r(utf8_encode($row['Descricao'])) ?></p>
@@ -41,7 +39,6 @@
               <p></p>
             <?php endif ?>
 
-            <!--<a href="<?php //print_r(str_replace(' ', '+', urlencode(utf8_encode($row['Titulo']))))?>-<?php //print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>-->
             <a href="ListaNoticias.php?Noticia=<?php print_r(str_replace(' ', '+', urlencode(utf8_encode($row['Titulo']))))?>&idNoticia=<?php print_r(utf8_encode($row['idNoticia'])) ?>">Ver mais</a>
           </div>
         </div>
@@ -50,9 +47,9 @@
           }	
         ?>
         </ul>
-      </section> <!--END <section id="paginate">-->
+      </section> 
 
-      <div class="pagination"> <!-- botões -->
+      <div class="pagination"> 
         <div class="prev">
           <span class="material-icons">
             navigate_before
@@ -76,7 +73,7 @@
           </div>
         </li>
       <?php } ?>
-</section> <!--END section class="container"-->
+</section> 
 
 
   <script src="./scripts/dropdown.js"></script>

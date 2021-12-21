@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatório Saúde Mental</title>
 
-  <link rel="icon" href="./assets/images/LogoObservatorio2.png">
+  <link rel="icon" href="./assets/images/logo-observatorio-sem-texto.png">
   
   <link rel="stylesheet" href="./styles/sobre.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -22,7 +22,7 @@
   ?>
 
   <main class="fade">
-    <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+    <div class="section-header"> 
       <h2>Sobre</h2>
     </div>
     <section class="container">
@@ -35,7 +35,7 @@
 
       <p class="reference">*SCHMIDT, Nádia Solange; SILVA, Christian Luiz da. Observatório como instrumento de prospectiva estratégica para as Instituições de Ciência e Tecnologia (ICTs). Interações (Campo Grande), Campo Grande , v. 19, n. 2, p. 387-400, June 2018 . Available from <a href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1518-70122018000200387&lng=en&nrm=iso" target="_blank"><span class="italic">Scielo Brasil</span></a>. access on 25 June 2020. <a href="http://dx.doi.org/10.20435/9inter.v19i2.1689" target="_blank"><span class="italic">DOI</span></a>.</p>
       
-      <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+      <div class="section-header">
         <h2>Coordenação</h2>
       </div>
       <div class="card-coordenacao">
@@ -69,7 +69,7 @@
         ?>
 
       </div>
-      <div class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+      <div class="section-header"> 
         <h2>Integrantes</h2>
       </div>
       <div class="card-integrantes">
@@ -109,9 +109,7 @@
   <?php
     include('footer.php');
   ?>
-
   
   <script src="./scripts/dropdown.js"></script>
-
 </body>
 </html>

@@ -1,2 +1,2 @@
-# TemplateGruposPesquisa
-Template da estrutura de sites dos Grupos de Pesquisa
+# Observatório de Saúde Mental
+Site desenvolvido para o Observatório de Saúde Mental pelo PETComp

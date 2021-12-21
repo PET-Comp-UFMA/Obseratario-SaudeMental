@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatório Saúde Mental</title>
   
-  <link rel="icon" href="./assets/images/LogoObservatorio2.png">
+  <link rel="icon" href="./assets/images/logo-observatorio-sem-texto.png">
   
   <link rel="stylesheet" href="./styles/submeter_obra.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -20,7 +20,7 @@
     ?>
 
     <main class="fade">
-        <div  class="section-header"> <!-- para mudar a cor é so acessar essa classe em style.css -->
+        <div  class="section-header">
         <h2>Como submeter uma Obra?</h2>
         </div>
         <section class="container">
